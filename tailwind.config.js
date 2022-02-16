@@ -3,24 +3,22 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      typography: { (theme) => ({
-        DEFAULT: {
-          css: {
-            h1: {
-              color: '#0F4C81'
-            },
-            h2: {
-              color: '#0F4C81'
-            },
-            h3: 
-            {color: '#0F4C81'
+      keyframes: {
+        wiggle: {
+          '0%, 100%': {
+            transform: 'rotate(-3deg)'
           },
-            h4: {
-              color: '#0F4C81'
-            },
-          }
+          '50%': {
+            transform: 'rotate(3deg)'
+          },
         }
-      })
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out infinite'
+      },
+      colors:{
+        'classic-blue': '#0F4C81'
+      }
     },
     borderWidth: {
       DEFAULT: '0.5px',
