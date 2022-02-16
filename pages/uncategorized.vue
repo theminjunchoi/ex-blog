@@ -36,7 +36,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content('blog', params.slug)
+    const articles = await $content('article', params.slug)
       .where({category: 'uncategorized'})
       .sortBy('createdAt', 'desc')
       .fetch();
