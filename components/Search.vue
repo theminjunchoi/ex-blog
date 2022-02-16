@@ -32,7 +32,7 @@ export default {
         return
       }
 
-      this.articles = await this.$content('blog')
+      this.articles = await this.$content('article')
         .only(['title', 'slug'])
         .sortBy('createdAt', 'desc')
         .limit(15)

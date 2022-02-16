@@ -12,12 +12,12 @@
 
 <!-- 검색 -->
   <div class="mt-14 md:mt-24 mb-5 md:mb-8 flex justify-between items-center max-w-6xl mx-auto px-6">
-        <div class="text-3xl text-gray-800 font-semibold mb-2 md:mb-5">Search Articles</div>
+    <div class="text-3xl text-gray-800 font-semibold mb-2 md:mb-5">Search Articles</div>
   </div>
   <Search />
 
 <!-- 카테고리 -->
-  <div class="max-w-6xl mx-auto pt-3 md:pt-16 pb-3 md:pb-12 px-2 md:px-6">
+  <div class="mt-14 md:mt-24 mb-5 md:mb-8 flex justify-between items-center max-w-6xl mx-auto px-6">
     <div class="text-3xl text-gray-800 font-semibold mb-2 md:mb-5">Category</div>
   </div>
   <Category />
