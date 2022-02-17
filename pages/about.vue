@@ -2,12 +2,22 @@
     <div>
         <Header />
         <div class="pt-10 md:pt-15 pb-3 md:pb-10 max-w-6xl mx-auto px-6">
-            <div class="pb-6 text-3xl md:text-5xl font-semibold text-gray-800">
+            <div class="pb-6 text-3xl md:text-4xl font-semibold text-gray-800">
                 About
             </div>
-            <div class="font-normal text-base md:text-xl text-gray-600">
-                안녕하세요
+
+
+            <div class=" hidden md:block">
+            <div class="my-20 px-24 flex flex-row justify-between">
+                <div class="w-52 h-52">
+                    <img :src="require(`~/assets/resources/profile/logo.jpg`)" class="profile" />
+                </div>
+                <div class="w-2/3 py-8 pl-4">
+                    <div class="text-gray-700 font-semibold text-lg md:mb-8 hover:text-blue-800">MinJun Choi | 최민준</div>
+                    <div class="mt-5 text-gray-600 prose text-base keepall"> 프로그래밍과 관련된 모든 분야에 관심이 있습니다. </br> 본 블로그에서는 제가 경험하고 공부한 내용의 포스트를 기재하고 있습니다. </div>
+                </div>
             </div>
+        </div>
         </div>
 
         
@@ -37,5 +47,13 @@ export default {
 </script>
 
 <style scoped>
-
+.profile {
+    border-radius: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.keepall {
+    word-break: keep-all;
+}
 </style>

@@ -20,12 +20,7 @@ module.exports = {
     },
     
   },
-  // variants: {
-  //   extend: {
-  //     translate: ['active', 'group-hover'],
-  //     transitionDuration: ['hover', 'focus'],
-  //   },
-  // },
+  
   plugins: [
     require('@tailwindcss/typography'),
   ],
