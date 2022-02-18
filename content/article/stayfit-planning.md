@@ -7,14 +7,6 @@ author: MinJun Choi
 img: stayfitplanning.jpg
 ---
 
-### Content
-1. 기획 의도
-2. 방향성
-3. 한계점
-4. 기술 스택
-5. 기능
-6. 목표
-7. 일정 (~ 3월 말)
 
 ### 기획 의도
 - __문제 상황__

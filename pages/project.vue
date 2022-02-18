@@ -15,16 +15,16 @@
         <div class="max-w-6xl grid grid-cols-1 colspan mt-5 md:mt-8 pb-14 md:pb-24 mx-auto px-6">
             <div class="group" v-for="article of articles" :key="article">
                 <nuxt-link :to='`article/${article.slug}`'>
-                    <div class="article-inner flex justify-between items-center border-t py-5 md:py-8 border-gray-600">
-                    <div class="pr-4">
-                        <p class="mb-1 md:mb-1.5 text-sm md:text-sm text-gray-400">{{article.category}} · {{article.author}}</p>
-                        <h2 class="mb-1 md:mb-1.5 text-lg md:text-xl font-normal  text-gray-800">{{ article.title }}</h2>
-                        <p class=" text-sm md:text-base text-gray-600 custom-text">{{article.description}}</p>
-                    </div>
-                    <!-- <div class="pl-4 pr-6 hidden md:block">
-                        <ExternalLinkLogo class="fill-current text-gray-400 group-hover:text-gray-700 transition duration-200" />
-                    </div> -->
-                    </div>
+                   <div class="article-inner flex items-center border-t py-5 md:py-8 border-gray-600">
+                  <div class="sbox hidden md:block group-hover:shadow-lg transform group-hover:scale-105 transition group-hover:duration-500">
+                    <img class="profile" :src="require(`~/assets/resources/${article.img}`)" alt="">
+                  </div>
+                  <div class="px-0 md:px-4 md:pl-9">
+                      <p class="mb-1 md:mb-1.5 text-sm md:text-sm text-blue-900">{{article.category}} · MinJun Choi</p>
+                      <h2 class="mb-1 md:mb-1.5 text-lg md:text-xl font-medium  text-gray-800 transition group-hover:text-blue-500 group-hover:duration-500">{{ article.title }}</h2>
+                      <p class=" text-sm md:text-base text-gray-600 custom-text">{{article.description}}</p>
+                  </div>
+                </div>
                 </nuxt-link>
             </div>
         </div>
@@ -62,5 +62,17 @@ export default {
 <style scoped>
 .keepall{
     word-break: keep-all;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
+}
+.sbox {
+  width: 212px;
+  height: 141.33px;
+  border-radius: 0.75rem;
+  overflow: hidden;
 }
 </style>
