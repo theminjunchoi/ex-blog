@@ -1,8 +1,8 @@
 <template>
 <div class="w-full bg-white">
     <Header />
-    <div class="related max-w-5xl mx-auto pt-28 pb-12 grid md:grid-cols-8 grid-cols-7 md:pb-24 md:pt-44">
-        <div class="col-span-7">
+    <div class="related max-w-7xl mx-auto pt-28 pb-12 grid md:grid-cols-8  md:pb-24 md:pt-44">
+        <div class="col-start-2 col-span-6">
         <div class="max-w-3xl mx-auto">
             <p class="text-base md:text-xl text-gray-400 text-center mb-2">
                 <nuxt-link :to="{path: `/${article.category}`}" replace class="hover:underline">
