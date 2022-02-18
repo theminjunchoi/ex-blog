@@ -3,8 +3,8 @@
   <div class="w-full bg-gradient-to-r from-blue-300 via-indigo-300 to-indigo-500">
     <Header />
     <div class="max-w-6xl py-20 md:py-28 px-6 md:px-6 mx-auto">
-      <div class="text-4xl text-center md:text-left text-gray-800 font-semibold mb-9 leading-9 drop-shadow-sm">Hi, there ! <br>I'm MinJun Choi. </div>
-      <div class="flex justify-center md:block md:justify-start">
+      <div class="text-4xl text-left md:text-left text-gray-800 font-semibold mb-9 leading-9 drop-shadow-sm">Hi, there ! <br>I'm MinJun Choi. </div>
+      <div class="flex justify-start md:block md:justify-start">
         <nuxt-link to="about" class="drop-shadow-sm py-2.5 px-3 bg-transparent text-gray-900 rounded-lg border border-gray-500 text-sm hover:bg-blue-200 transition duration-200">About me</nuxt-link>
       </div>
     </div>
