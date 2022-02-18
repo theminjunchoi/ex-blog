@@ -33,15 +33,16 @@
     <div class="max-w-6xl grid grid-cols-1 colspan mt-5 md:mt-8 mx-auto px-6 md:pb-32">
         <div class="group" v-for="article of articles" :key="article">
             <nuxt-link :to='`article/${article.slug}`'>
-                <div class="article-inner flex justify-between items-center border-t py-5 md:py-8 border-gray-600">
-                  <div class="pr-4">
+                <div class="article-inner flex items-center border-t py-5 md:py-8 border-gray-600">
+                  <div class="sbox hidden md:block group-hover:shadow-lg transform group-hover:scale-105 transition group-hover:duration-500">
+                    <img class="profile" :src="require(`~/assets/resources/${article.img}`)" alt="">
+                  </div>
+                  <div class="px-0 md:px-4 md:pl-9">
                       <p class="mb-1 md:mb-1.5 text-sm md:text-sm text-blue-900">{{article.category}} · MinJun Choi</p>
                       <h2 class="mb-1 md:mb-1.5 text-lg md:text-xl font-medium  text-gray-800 transition group-hover:text-blue-500 group-hover:duration-500">{{ article.title }}</h2>
                       <p class=" text-sm md:text-base text-gray-600 custom-text">{{article.description}}</p>
                   </div>
-                 <div class="sbox hidden md:block group-hover:shadow-lg transform group-hover:translate-y-1 transition group-hover:duration-500">
-                   <img class="profile" :src="require(`~/assets/resources/${article.img}`)" alt="">
-                 </div>
+                  
                 </div>
             </nuxt-link>
         </div>

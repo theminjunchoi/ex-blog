@@ -14,20 +14,19 @@
                 {{formatDate(article.createdAt)}} · by MinJun Choi
             </p>
         </div>
+        <img :src="require(`~/assets/resources/${article.img}`)" alt="" class="mt-6 mb-8 md:rounded-4xl md:my-10" />
 
-        <nuxt-content :document="article" class="prose max-w-6xl custom-text px-6"/>
+        <nuxt-content :document="article" class="prose max-w-5xl custom-text px-6"/>
 
-        <div class="max-w-6xl mx-auto px-5 flex justify-center pt-16 md:pt-20 pb-6 md:pb-20">
+        <!-- <div class="max-w-6xl mx-auto px-5 flex justify-center pt-16 md:pt-20 pb-6 md:pb-20">
             
                 <div class="box mb-4 md:mb-6 mx-auto">
                     <div class="sbox hidden md:block group-hover:shadow-lg transform group-hover:translate-y-1 transition group-hover:duration-500">
                         <img class="profile" :src="require(`~/assets/resources/profile/logo.jpg`)" alt="">
                     </div>
                 </div>
-                
-                
-            
-        </div>
+                 
+        </div> -->
 
         <Prevnext :prev="prev" :next="next" />
 
