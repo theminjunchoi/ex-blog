@@ -25,7 +25,7 @@
 
 <aside ref="toc" class="hidden col-span-1 lg:flex lg:flex-col">
       <div class="sticky top-16">
-        <h2 class="uppercase text-black font-h2 text-lg lg:mt-16 lg:md-3 tracking-wider">Contents</h2>
+        <h2 class="uppercase text-black md:pb-3 font-semibold text-lg lg:mt-16 lg:md-3 tracking-wider">Contents</h2>
         <nav class="">
           <ul>
             <li
