@@ -13,12 +13,12 @@
                     
                     <li>
                         <div class="py-1 px-3 rounded-lg hover:bg-indigo-300">
-                            <nuxt-link to="all-articles" class="text-gray-700 text-sm font-semibold">Article</nuxt-link>
+                            <nuxt-link :to="{path: '/all-articles'}" class="text-gray-700 text-sm font-semibold">Article</nuxt-link>
                         </div>
                     </li>
                     <li>
                         <div class="py-1 px-3 rounded-lg hover:bg-indigo-300">
-                            <nuxt-link to="about" class="text-gray-700 text-sm font-semibold">About</nuxt-link>
+                            <nuxt-link :to="{path: '/about'}" class="text-gray-700 text-sm font-semibold">About</nuxt-link>
                         </div>
                     </li>
 
