@@ -20,7 +20,7 @@
                     </div>
                     <div class="h-2/5 flex items-center">
                         <div class="px-6">
-                            <div class="text-gray-600 mb-1 ">Articles about studying app developing (mainly Flutter).</div>
+                            <div class="text-gray-600 mb-1 ">Articles about studying app development (mainly Flutter).</div>
                         </div>
                     </div>
                 </nuxt-link>

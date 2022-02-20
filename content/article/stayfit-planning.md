@@ -46,7 +46,7 @@ img: stayfitplanning.jpg
 - Flutter, firebase review, and Find the next technical stack to study.
 
 ## Plan
-- The fourth week of Fabruary
+- The fourth week of February
     - Implementing login function
     - register page done
 
