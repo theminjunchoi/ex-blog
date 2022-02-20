@@ -8,7 +8,7 @@
                     </div>
                     <div class="h-2/5 flex items-center">
                         <div class="px-6">
-                            <div class="text-gray-800 mb-1 ">Toy Project에 관한 글입니다.</div>
+                            <div class="text-gray-600 mb-1 ">Articles about Toy Project.</div>
                         </div>
                     </div>
                 </nuxt-link>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="h-2/5 flex items-center">
                         <div class="px-6">
-                            <div class="text-gray-800 mb-1 ">앱 개발과 관련된 글입니다.</div>
+                            <div class="text-gray-600 mb-1 ">Articles about studying app developing (mainly Flutter).</div>
                         </div>
                     </div>
                 </nuxt-link>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="h-2/5 flex items-center">
                         <div class="px-6">
-                            <div class="text-gray-800 mb-1 ">알고리즘 및 문제풀이에 관한 글입니다.</div>
+                            <div class="text-gray-600 mb-1 ">Articles about algorithm and process of solving problems.</div>
                         </div>
                     </div>
                 </nuxt-link>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="h-2/5 flex items-center">
                         <div class="px-6">
-                            <div class="text-gray-800 mb-1 ">책 내용 정리 및 복습에 관한 글입니다.</div>
+                            <div class="text-gray-600 mb-1 ">Articles about reviewing books.</div>
                         </div>
                     </div>
                 </nuxt-link>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="h-2/5 flex items-center">
                         <div class="px-6">
-                            <div class="text-gray-800 mb-1 ">분류하기 애매한 글입니다.</div>
+                            <div class="text-gray-600 mb-1 ">Ambiguous articles to classify.</div>
                         </div>
                     </div>
                 </nuxt-link>

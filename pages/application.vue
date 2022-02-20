@@ -6,7 +6,7 @@
                 Application
             </div>
             <div class="font-normal text-base md:text-xl text-gray-600">
-                앱 개발과 관련된 글들을 모아봤어요. 
+                Articles about studying app developing. 
             </div>
         </div>
 

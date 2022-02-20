@@ -6,7 +6,7 @@
                 Articles
             </div>
             <div class="font-normal text-base md:text-xl text-gray-600">
-                블로그에 있는 모든 글을 모아봤어요. 
+                I've collected all the articles on my blog. 
             </div>
         </div>
 

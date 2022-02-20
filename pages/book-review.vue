@@ -6,7 +6,7 @@
                 Book Review
             </div>
             <div class="font-normal text-base md:text-xl text-gray-600">
-                책 내용 정리 및 복습에 관한 글입니다.
+                Articles about reviewing books.
             </div>
         </div>
 

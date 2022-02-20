@@ -1,6 +1,6 @@
 ---
 title: StayFit App Intro
-description: StayFit 앱 개발을 위한 소개 및 계획입니다.
+description: This is an introduction and plan for the development of the StayFit app.
 slug: stayfit-planning
 category: project
 author: MinJun Choi
@@ -8,59 +8,58 @@ img: stayfitplanning.jpg
 ---
 
 
-## 기획 의도
-- __문제 상황__
-    1. 헬스 트레이너의 업무공간 분리
-        - 일 외적인 시간에도 회원들을 관리해야함.
-        - 스케줄러 관리 필요함
+## Intention
+- __Problematic situation.__
+    1. Separation of the fitness trainer's work space
+        - Members must be managed even during external times.
+        - It needs to take care of all member's scheduler.
 
-    2. 식단, 운동 프로그램 안내 등을 일일히 안내해줘야하는 반복적인 일이 수행됨
-        - 식단별로, 운동 프로그램별로 칼로리 계산이 필요함
+    2. Repeated tasks such as diet and exercise program guidance are carried out.
+        - Calories need to be calculated by diet and exercise program.
 
 - __Solution__
-    - 채팅 기반의 앱을 만들되, 스케줄러, 식단, 운동 프로그램을 관리할 수 있는 페이지를 따로 만들자.
+    - Create a chat-based app, but create a separate page to manage schedulers, diets, and fitness programs.
 
 
-## 방향성
-- 지금까지 앱개발 공부를 위주로 했기 때문에 기능 구현에 먼저 초점을 맞추자.
-- Flutter 및 Firebase에서 공부한 내용을 최대한 다 써먹어보자.
-- 출시를 목표가 아닌 prototype 제작을 목표로하자
+## Direction
+- Since I have focused on studying app development so far, let's focus on implementing functions first.
+- Let's try to use as much as possible what I've learned about Flutter and Firebase
+- The goal is not to release it but to produce prototype.
 
 
-## 한계점
-- Chatting 기능을 타 프로그램에서 제공해줄 수 있지만 이번에는 한땀한땀 만들어보려고 한다.
-- UI tool은 공부를 안해서 디자인적 요소가 부족할 수 있다.
+## Limits
+- Other programs can provide chatting functions, but this time, I'm going to make it myself.
+- Design elements may be insufficient because I didn't studied UI tools.
 
 
-## 기술 스택
+## Tech Stack
 - __Flutter__
-    - Widget, Routing, State Management 등을 Flutter에서 처리할 계획이다.
+    - It plans to process Widget, Routing, and State Management with a Flutter.
 - __Firebase__
-    - register, login, chat 등에 대한 데이터를 저장할 계획이다.
+    - It plans to store data on register, login, chat, etc.
 
-## 기능
-- 추후 구체화하여 기재할 예정
+## Function
+- I'm going to write it down in detail later.
 
-## 목표
-- 앱 프로토타입 제작
-- Flutter, firebase review 및 다음으로 공부할 기술 스택 찾기
+## Purpose
+- developing prototype
+- Flutter, firebase review, and Find the next technical stack to study.
 
-## 일정
-- 2월 넷째주
-    - login 기능 구현
-    - register page 제작 완료
+## Plan
+- The fourth week of Fabruary
+    - Implementing login function
+    - register page done
 
-- 3월 첫째주
-    - register 기능 구현
-    - homepage 제작 완료
+- The first week of March.
+    - Implementing register function
+    - homepage done
 
-- 3월 둘째주
-    - homepage 제작 완료
-    - chat list 기능구현
+- The second week of March.
+    - Implementing chat list function
 
-- 3월 셋째주
-    - chatting 기능 구현
+- The third week of March.
+    - Implementing chatting function
 
-- 3월 넷째주
-    - users page 제작 및 기능 구현
+- The fourth week of March.
+    - Making User's page function and design
 

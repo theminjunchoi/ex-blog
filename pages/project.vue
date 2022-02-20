@@ -6,7 +6,7 @@
                 Project
             </div>
             <div class="font-normal text-base md:text-xl text-gray-600">
-                Toy Project에 관한 글입니다.
+                Articles about Toy Project.
             </div>
         </div>
 

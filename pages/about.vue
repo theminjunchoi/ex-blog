@@ -14,7 +14,7 @@
                     </div>
                     <div class="w-2/3 py-8 pl-4">
                         <div class="text-gray-700 font-semibold text-lg md:mb-8 hover:text-blue-800">MinJun Choi | 최민준</div>
-                        <div class="mt-5 text-gray-600 prose text-base keepall"> 프로그래밍과 관련된 모든 분야에 관심이 있습니다. <br> 본 블로그에서는 제가 경험하고 공부한 내용의 포스트를 기재하고 있습니다. </div>
+                        <div class="mt-5 text-gray-600 prose text-base keepall"> I am interested in all areas related to programming. <br> In this blog, I write a post about my experiences and studies. </div>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="w-4/5 md:w-2/3 text-gray-600 font-normal text-sm">
                     <div class="text-gray-700 font-semibold text-lg md:mb-8 hover:text-blue-800">MinJun Choi | 최민준</div>
-                        <div class="mt-5 text-gray-600 prose text-base keepall"> 프로그래밍과 관련된 모든 분야에 관심이 있습니다. <br> 본 블로그에서는 제가 경험하고 공부한 내용의 포스트를 기재하고 있습니다. </div>
+                        <div class="mt-5 text-gray-600 prose text-base keepall"> I am interested in all areas related to programming. <br> In this blog, I write a post about my experiences and studies. </div>
                 </div>
             </div>
         </div>

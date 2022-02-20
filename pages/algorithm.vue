@@ -6,7 +6,7 @@
                 Algorithm
             </div>
             <div class="font-normal text-base md:text-xl text-gray-600">
-                알고리즘 및 문제풀이에 관한 글입니다.
+                Articles about algorithm and process of solving problems.
             </div>
         </div>
 

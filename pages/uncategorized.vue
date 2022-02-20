@@ -6,7 +6,7 @@
                 Uncategorized
             </div>
             <div class="font-normal text-base md:text-xl text-gray-600">
-                분류하기 애매한 글들을 모아봤어요. 
+                Ambiguous articles to classify. 
             </div>
         </div>
 
