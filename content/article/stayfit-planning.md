@@ -29,7 +29,7 @@ img: stayfitplanning.jpg
 
 ## Limits
 - Other programs can provide chatting functions, but this time, I'm going to make it myself.
-- Design elements may be insufficient because I didn't studied UI tools.
+- Design elements may be insufficient because I didn't study UI tools.
 
 
 ## Tech Stack
