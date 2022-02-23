@@ -2,7 +2,7 @@
 
 ## Intro
 
-<img src="../images/README/logo-16454534295171.png" alt="logo" style="zoom:50%;" />
+<img src="./assets/resources/profile/logo.png" alt="logo" style="zoom:50%;" />
 
 I aim to be `a steadily growing developer.`
 It's a space to write down what I'm studying and developing now.
