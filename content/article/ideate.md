@@ -23,8 +23,12 @@ or could be handled at <a href="https://choiminjun.com/project" target="" class=
 1. The fitness trainer's work space and privacy separation problem, and individual diet or program guidance took a lot of repetitive work and time.
     -  <a href="https://choiminjun.com/stayfit-planning" target="" class="hover: underline">StayFit</a> : Chat-based app, focusing on planning one's diet and fitness program
         - using Flutter & Firebase
+        
         - UI... Figma ?
+        
         - 1 to n matching
+        
+          
 
 ### continue soon :)
 
