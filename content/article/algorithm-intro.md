@@ -8,7 +8,7 @@ img: algorithm.jpg
 ---
 
 ## Intro
-Among the problems, I will post problems that I am not sure, or problems that are difficult to solve and worth looking back on later on in this space.
+Among the problems, I will post few ones that I am not sure, or that are difficult to solve and worth looking back later in this space.
 
 ## Whole Code
 You can see my whole code in my [GitHub Repo](https://github.com/minjun0430/CodeRace).
