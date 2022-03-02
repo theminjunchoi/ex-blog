@@ -13,8 +13,8 @@ img: stayfitprocess.jpg
     - [x] Sign in function 
     
     - [x] Sign up function
-        - using email
-        
+        - [x] using email
+    
     - [x] profile making UI
     
     - [ ] Image uploader using file picker package (still debugging.......whyrano..) 
@@ -42,7 +42,6 @@ img: stayfitprocess.jpg
     - [ ] making UI
 
     - [ ] making function
-    
     
 - etc
     - [ ] bottomBarNav
