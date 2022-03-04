@@ -19,6 +19,9 @@ You can see my whole code in my [GitHub Repo](https://github.com/minjun0430/Code
 ### Data Structure
 
 ### Graph
-- `boj_1260` : basic DFS, BFS / getting used to it to modify as I want
-- `boj_2667` : don't try to check all the graph / decide the big part first
+- __boj_1260__ : basic DFS, BFS / getting used to it to modify as I want
+- __boj_2667__ : don't try to check all the graph / decide the big part first
+
 ### Binary Search
+- __boj_10816__ : focused too much on binary search / solved with simple dictionary 😅
+- __boj_1654__ : confusing which algorithm would be used / If it hadn't been classified as binary search, it would be more longer to solve.
