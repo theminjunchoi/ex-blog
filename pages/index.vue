@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="hidden md:block">
-        <img src="~/assets/resources/profile/Saly-10 compressed.png" class="h-100"/>
+        <img src="~/assets/resources/profile/Saly-10-compressed.png" class="h-100"/>
       </div>
     </div>
   </div>

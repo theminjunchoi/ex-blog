@@ -1,68 +1,63 @@
 <template>
     <div>
         <div class="max-w-6xl flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto px-6 gap-x-3 gap-y-3 pb-18 md:pb-8">
-            <div class="border border-gray-900 h-40 sm:h-44 rounded-lg bg-white hover:bg-blue-50 group">
+            <div class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark" aria-label="Single Project">
                 <nuxt-link to="project">
-                    <div class="h-2/5 border-b border-gray-900 flex items-center">
-                        <div class="text-2xl text-gray-800 font-medium px-6 hover:underline">Project</div>
+                    <div>
+                        <img :src="require(`~/assets/resources/category/cproject.jpg`)" class="rounded-t-xl border-none"/>
                     </div>
-                    <div class="h-2/5 flex items-center">
-                        <div class="px-6">
-                            <div class="text-gray-600 mb-1 ">Articles about Toy Project.</div>
-                        </div>
+                    <div class="text-center px-4 py-6">
+                        <p class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">Project</p>
                     </div>
                 </nuxt-link>
             </div>
-            <div class="border border-gray-900 h-40 sm:h-44 rounded-lg bg-white hover:bg-blue-50 group">
+            <div class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark" aria-label="Single Project">
                 <nuxt-link to="application">
-                    <div class="h-2/5 border-b border-gray-900 flex items-center">
-                        <div class="text-2xl text-gray-800 font-medium px-6 hover:underline">Application</div>
+                    <div>
+                        <img :src="require(`~/assets/resources/category/capp.jpg`)" class="rounded-t-xl border-none"/>
                     </div>
-                    <div class="h-2/5 flex items-center">
-                        <div class="px-6">
-                            <div class="text-gray-600 mb-1 ">Articles about studying app development (mainly Flutter).</div>
-                        </div>
+                    <div class="text-center px-4 py-6">
+                        <p class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">Application</p>
                     </div>
                 </nuxt-link>
             </div>
-            <div class="border border-gray-900 h-40 sm:h-44 rounded-lg bg-white hover:bg-blue-50 group">
+            <div class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark" aria-label="Single Project">
                 <nuxt-link to="algorithm">
-                    <div class="h-2/5 border-b border-gray-900 flex items-center">
-                        <div class="text-2xl text-gray-800 font-medium px-6 hover:underline">Algorithm</div>
+                    <div>
+                        <img :src="require(`~/assets/resources/category/calgo.jpg`)" class="rounded-t-xl border-none"/>
                     </div>
-                    <div class="h-2/5 flex items-center">
-                        <div class="px-6">
-                            <div class="text-gray-600 mb-1 ">Articles about algorithm and process of solving problems.</div>
-                        </div>
+                    <div class="text-center px-4 py-6">
+                        <p class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">Algorithm</p>
                     </div>
                 </nuxt-link>
             </div>
-            <div class="border border-gray-900 h-40 sm:h-44 rounded-lg bg-white hover:bg-blue-50 group">
+            <div class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark" aria-label="Single Project">
                 <nuxt-link to="book-review">
-                    <div class="h-2/5 border-b border-gray-900 flex items-center">
-                        <div class="text-2xl text-gray-800 font-medium px-6 hover:underline">Book Review</div>
+                    <div>
+                        <img :src="require(`~/assets/resources/category/cbook.jpg`)" class="rounded-t-xl border-none"/>
                     </div>
-                    <div class="h-2/5 flex items-center">
-                        <div class="px-6">
-                            <div class="text-gray-600 mb-1 ">Articles about reviewing books.</div>
-                        </div>
+                    <div class="text-center px-4 py-6">
+                        <p class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">Book Review</p>
                     </div>
                 </nuxt-link>
             </div>
-            <div class="border border-gray-900 h-40 sm:h-44 rounded-lg bg-white hover:bg-blue-50 group">
+            <div class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark" aria-label="Single Project">
                 <nuxt-link to="uncategorized">
-                    <div class="h-2/5 border-b border-gray-900 flex items-center">
-                        <div class="text-2xl text-gray-800 font-medium px-6 hover:underline">Uncategorized</div>
+                    <div>
+                        <img :src="require(`~/assets/resources/category/cetc.jpg`)" class="rounded-t-xl border-none"/>
                     </div>
-                    <div class="h-2/5 flex items-center">
-                        <div class="px-6">
-                            <div class="text-gray-600 mb-1 ">Ambiguous articles to classify.</div>
-                        </div>
+                    <div class="text-center px-4 py-6">
+                        <p class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">Uncategorized</p>
                     </div>
                 </nuxt-link>
             </div>
-        </div>
 
+      
+            
+    
+            
+            
+        </div>
     </div>
 </template>
 
