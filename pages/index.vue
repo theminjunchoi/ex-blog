@@ -1,18 +1,26 @@
 <template>
 <div>
-  <div class="w-full bg-gradient-to-r from-blue-300 via-indigo-300 to-indigo-500">
+  <div class=" ">
+    
     <Header />
-    <div class="max-w-6xl grid md:grid-cols-2 grid-cols-1 py-20 md:py-0 px-6 md:px-6 mx-auto">
-      <div class="md:pt-10 md:pb-20 pb-0 pt-0 md:mt-10 mt-0">
-        <div class="md:pt-20 pt-0 text-4xl text-left md:text-left text-gray-800 font-semibold mb-9 mt-10 leading-9 drop-shadow-sm">Hi, there ! <br>I'm MinJun Choi; </div>
-        <div class="flex justify-start md:block md:justify-start">
-          <nuxt-link to="about" class="drop-shadow-sm py-2.5 px-3 bg-transparent text-gray-900 rounded-lg border border-gray-500 text-sm hover:bg-blue-200 transition duration-200">About me</nuxt-link>
-        </div>
+    
+    <!-- Banner left wording -->
+    <section class=" max-w-6xl mx-auto flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10">
+      <div class="w-full md:w-1/3 text-left ml-7">
+        <h1 class="font-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-black">
+          Hi, I am MinJun Choi
+        </h1>
+        <p class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left text-gray-400" >
+          A Growing Developer <br>
+          CSE Student
+        </p>
       </div>
-      <div class="hidden md:block">
-        <img src="~/assets/resources/profile/Saly-10-compressed.png" class="h-100"/>
+
+      <!-- Banner right illustration -->
+      <div class="w-full md:w-2/3 text-right float-right">
+        <img src="~/assets/resources/profile/dev.svg" />
       </div>
-    </div>
+    </section>
   </div>
 
 <!-- 검색 -->
