@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class=" ">
+  <div class="mb-10">
     
     <Header />
     
@@ -23,25 +23,28 @@
     </section>
   </div>
 
-<!-- 검색 -->
-  <div class="mt-14 md:mt-24 mb-5 md:mb-8 flex justify-between items-center max-w-6xl mx-auto px-6">
-    <div class="text-3xl text-gray-800 font-semibold mb-2 md:mb-5">Search Articles</div>
+<!-- About me -->
+  <div class=" bg-gray-100">
+    <Aboutme />
   </div>
-  <Search />
+
+
 
 <!-- 카테고리 -->
-  <div class="mt-14 md:mt-24 mb-5 md:mb-8 flex justify-between items-center max-w-6xl mx-auto px-6">
+  <div class="mt-14 md:mt-20 mb-5 md:mb-8 flex justify-between items-center max-w-6xl mx-auto px-6">
     <div class="text-3xl text-gray-800 font-semibold mb-2 md:mb-5">Category</div>
   </div>
   <Category />
 
-<!-- 최신 아티클 -->
+<!-- 최신 아티클 및 검색-->
   <div class="mt-14 md:mt-24 mb-6 md:mb-10 flex justify-between items-center max-w-6xl mx-auto px-6">
         <div class="text-3xl text-gray-800 font-semibold mb-2 md:mb-5">Latest Articles</div>
         <nuxt-link to="all-articles">
           <div class="text-base text-blue-500 poppins hover:underline hidden md:block">See All Articles</div>
         </nuxt-link>
     </div>
+
+    <Search />
 
     <div class="max-w-6xl grid grid-cols-1 colspan mt-5 md:mt-8 mx-auto px-6 md:pb-32">
         <div class="group" v-for="article of articles" :key="article">
@@ -111,6 +114,16 @@ export default {
   border-radius: 0.75rem;
   overflow: hidden;
 }
+.profileimage {
+    border-radius: 20%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.keepall {
+    word-break: keep-all;
+}
+
 </style>
 
 
