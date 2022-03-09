@@ -6,7 +6,7 @@
                 Lecture
             </div>
             <div class="font-normal text-base md:text-xl text-gray-600">
-                Writing about my school lectures.
+                Writing about my school lectures :)
             </div>
         </div>
 
