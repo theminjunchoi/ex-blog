@@ -42,6 +42,16 @@
                 </nuxt-link>
             </div>
             <div class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark" aria-label="Single Project">
+                <nuxt-link to="lecture">
+                    <div>
+                        <img :src="require(`~/assets/resources/category/clecture.jpg`)" class="rounded-t-xl border-none"/>
+                    </div>
+                    <div class="text-center px-4 py-6">
+                        <p class="font-general-semibold text-xl text-ternary-dark  font-semibold mb-2">Lecture</p>
+                    </div>
+                </nuxt-link>
+            </div>
+            <div class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark" aria-label="Single Project">
                 <nuxt-link to="uncategorized">
                     <div>
                         <img :src="require(`~/assets/resources/category/cetc.jpg`)" class="rounded-t-xl border-none"/>
