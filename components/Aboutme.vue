@@ -7,7 +7,7 @@
       </div>
       <div class="w-2/3 py-8 pl-4">
         <div class="text-gray-700 font-semibold text-lg  hover:text-blue-800">MinJun Choi | 최민준</div>
-        <div class="mt-5 text-gray-600 prose text-base keepall"> I am interested in all areas related to programming. <br> I'm now studying Flutter, Kotlin and Spring. <br> In this blog, I write a post about my experiences and studies. </div>
+        <div class="mt-5 text-gray-600 prose text-base keepall"> I am interested in all areas related to programming. <br> I'm now studying Flutter, Kotlin and Spring. <br> I love to learn something new. <br> In this blog, I write a post about my experiences and studies. </div>
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
       </div>
       <div class="w-4/5 md:w-2/3 mb-10 text-gray-600 font-normal text-sm">
         <div class="text-gray-700 font-semibold text-lg md:mb-8 hover:text-blue-800">MinJun Choi | 최민준</div>
-        <div class="mt-5 text-gray-600 prose text-base keepall"> I am interested in all areas related to programming. <br> I'm now studying Flutter, Kotlin and Spring. <br> In this blog, I write a post about my experiences and studies. </div>
+        <div class="mt-5 text-gray-600 prose text-base keepall"> I am interested in all areas related to programming. <br> I'm now studying Flutter, Kotlin and Spring.  <br> I love to learn something new. <br> In this blog, I write a post about my experiences and studies. </div>
       </div>
   </div>
   </div>
