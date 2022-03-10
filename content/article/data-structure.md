@@ -55,7 +55,7 @@ img: datastructure.jpg
 
 ### Pseudo Code 구문
 
-* Assignment: <-, = := (C 언어: =)
+* Assignment: <-, =, := (C 언어: =)
 * 제어문
   * if - then - else
   * for i <- 1 to n [by 1] {...} // for (i=1; i<= n; i++) {...}

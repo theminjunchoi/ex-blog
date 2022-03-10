@@ -18,8 +18,6 @@
 
         <nuxt-content :document="article" class="prose max-w-5xl col-span-2 custom-text px-6"/>
         
-        
-
         <Prevnext :prev="prev" :next="next" />
     </div>
 
