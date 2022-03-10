@@ -40,7 +40,7 @@ img: datastructure.jpg
 * 단점: 알고리즘 criteria 충족하지 못할 수 있는 점 주의 필요
 * Example: 배열 A[0...n-1]에 저장된 n개의 수 중 양수의 개수와 그 합 구하기
 
-  ```pseudocode
+  ``pseudocode
   sum <- 0
   count <- 0
   for i <- to n-1 do {
@@ -49,7 +49,7 @@ img: datastructure.jpg
   		count <- count += 1
   	}
   }
-  ```
+  ``
 
 
 
