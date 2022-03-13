@@ -21,14 +21,12 @@ or could be handled at <a href="https://choiminjun.com/project" target="" class=
 ### Num 1
 
 1. The fitness trainer's work space and privacy separation problem, and individual diet or program guidance took a lot of repetitive work and time.
-    -  <a href="https://choiminjun.com/stayfit-planning" target="" class="hover: underline">StayFit</a> : Chat-based app, focusing on planning one's diet and fitness program
-        - using Flutter & Firebase
-        
-        - UI... Figma ?
-        
-        - 1 to n matching
-        
-          
+
+### Num 2
+2. From [2022 Solution Challenge](https://developers.google.com/community/gdsc-solution-challenge/UN-goals), I picked the [Life on Land] problem.
+   - MyPlant App: An app that encourages users to be interested in their plants every day.
+   - see the codes at [GitHub repo](https://github.com/minjun0430/MyPlant-Application).
+   - see the details at [MyPlant Planning](https://choiminjun.com/article/myplant-planning).
 
 ### continue soon :)
 

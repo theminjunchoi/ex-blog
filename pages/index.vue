@@ -55,7 +55,7 @@
                   </div>
                   <div class="px-0 md:px-4 md:pl-9">
                       <p class="mb-1 md:mb-1.5 text-sm md:text-sm text-blue-900">{{article.category}} · MinJun Choi</p>
-                      <h2 class="mb-1 md:mb-1.5 text-lg md:text-xl font-medium  text-gray-800 transition group-hover:text-blue-500 group-hover:duration-500">{{ article.title }}</h2>
+                      <h2 class="mb-1 md:mb-1.5 text-lg md:text-xl font-semibold  text-gray-800 transition group-hover:text-blue-500 group-hover:duration-500">{{ article.title }}</h2>
                       <p class=" text-sm md:text-base text-gray-600 custom-text">{{article.description}}</p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default {
   object-fit: 100%;
 }
 .sbox {
-  width: 212px;
+  width: 220px;
   height: 141.33px;
   border-radius: 0.75rem;
   overflow: hidden;
