@@ -185,4 +185,6 @@ img {
     height: 100%;
     object-fit: cover;
 }
+code::before { content: none !important; } 
+code::after { content: none !important; }
 </style>
