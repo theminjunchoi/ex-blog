@@ -1,9 +1,9 @@
 <template>
       <div class="max-w-6xl mx-auto px-6 pt-1 md:pt-0 md:0b-0">
-        <div class="shadow-sm md:shadow w-full rounded-lg border border-gray-800 flex items-center mb-4 py-3 md:py-3.5 px-5 bg-white">
+        <div class="shadow-sm md:shadow w-full rounded-lg border border-gray-800 flex items-center mb-4 py-3 md:py-3.5 px-5 bg-gray-light">
             <SearchIcon />
             <input placeholder="Search for various topics." v-model="query" type="search" autocomplete="off" 
-            class="ml-3 bg-white flex-auto text-base text-gray-800 pr-3.5 md:pr-6 flex items-center placeholder-text-gray-400" />
+            class="ml-3 bg-gray-light flex-auto text-base text-gray-800 pr-3.5 md:pr-6 flex items-center placeholder-text-gray-400" />
         </div>
 
         <ul v-if="articles.length" class="shadow-sm md:shadow rounded-lg border border-gray-300 px-4 bg-white">

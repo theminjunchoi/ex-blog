@@ -1,5 +1,5 @@
 <template>
-<div class="w-full bg-white">
+<div class="w-full bg-gray-light">
     <Header />
     <div class="related max-w-7xl mx-auto pt-28 pb-12 grid md:grid-cols-8  md:pb-24 md:pt-44">
         <div class="col-start-2 col-span-6">

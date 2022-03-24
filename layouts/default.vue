@@ -3,7 +3,7 @@
         <!-- <Warning /> -->
         <!-- <Header /> -->
         <Nuxt />
-        <Footer />
+        <!-- <Footer /> -->
     </div>
 </template>
 

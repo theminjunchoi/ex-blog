@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-gray-light">
         <Header />
         <div class="pt-10 md:pt-15 pb-3 md:pb-10 max-w-6xl mx-auto px-6">
             <div class="pb-6 text-3xl md:text-5xl font-semibold text-gray-800">
@@ -28,7 +28,7 @@
                 </nuxt-link>
             </div>
         </div>
-
+      <Footer />
     </div>
 
 </template>

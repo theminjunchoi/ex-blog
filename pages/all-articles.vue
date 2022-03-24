@@ -1,15 +1,15 @@
 <template>
-    <div>
+    <div class="bg-gray-light">
         <Header />
         <div class="pt-10 md:pt-15 pb-3 md:pb-10 max-w-6xl mx-auto px-6">
             <div class="pb-6 text-3xl md:text-4xl font-semibold text-gray-800">
                 Articles
             </div>
-            <div class="font-normal text-base md:text-xl text-gray-600">
+            <!-- <div class="font-normal text-base md:text-xl text-gray-600">
                 I've collected all the articles on my blog. 
-            </div>
+            </div> -->
         </div>
-
+        <Category />
         <Search />
 
         <div class="max-w-6xl grid grid-cols-1 colspan mt-5 md:mt-8 pb-14 md:pb-24 mx-auto px-6">
@@ -28,6 +28,7 @@
                 </nuxt-link>
             </div>
         </div>
+        <Footer />
     </div>
 
 </template>

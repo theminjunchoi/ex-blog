@@ -1,14 +1,17 @@
 module.exports = {
 
   theme: {
+    colors: {
+      'gray-light': '#E5E5E5'
+    },
     extend: {
       keyframes: {
         wiggle: {
           '0%, 100%': {
-            transform: 'rotate(-3deg)'
+            transform: 'rotate(-2deg)'
           },
           '50%': {
-            transform: 'rotate(3deg)'
+            transform: 'rotate(2deg)'
           },
         }
       },

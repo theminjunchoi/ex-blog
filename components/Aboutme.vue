@@ -3,7 +3,7 @@
     <div class="hidden md:block pt-10 md:pt-15 pb-3 md:pb-10 max-w-6xl mx-auto px-6">
     <div class="my-20 px-24 flex flex-row justify-between">
       <div class="w-52 h-52">
-        <img :src="require(`~/assets/resources/profile/logo.jpg`)" class="profileimage" />
+        <img :src="require(`~/assets/resources/profile/newLogo.png`)" class="profileimage" />
       </div>
       <div class="w-2/3 py-8 pl-4">
         <div class="text-gray-700 font-semibold text-lg  hover:text-blue-800">MinJun Choi | 최민준</div>
@@ -14,7 +14,7 @@
   <div class="block md:hidden">
     <div class="my-10 px-5  flex flex-col items-center">
       <div class="w-40 h-40 mb-10 mt-10">
-        <img :src="require(`~/assets/resources/profile/logo.jpg`)" class="profileimage" />
+        <img :src="require(`~/assets/resources/profile/newLogo.png`)" class="profileimage" />
       </div>
       <div class="w-4/5 md:w-2/3 mb-10 text-gray-600 font-normal text-sm">
         <div class="text-gray-700 font-semibold text-lg md:mb-8 hover:text-blue-800">MinJun Choi | 최민준</div>
