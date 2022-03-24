@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen bg-gray-light">
+  <div class="w-screen h-screen bg-gray-light ">
     <Header />
     <div class="mx-auto max-w-7xl ">
 

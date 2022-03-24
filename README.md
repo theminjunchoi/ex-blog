@@ -2,7 +2,7 @@
 
 ## Intro
 
-<img src="./assets/resources/profile/logo.png" alt="logo" width="150" />
+<img src="./assets/resources/profile/newLogo.png" alt="logo" width="150" />
 
 I aim to be `a steadily growing developer.`
 It's a space to write down what I'm studying and developing now.
