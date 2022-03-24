@@ -1,6 +1,5 @@
 <template>
-<svg class="w-auto md:block h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.48 110.3"><defs><style>.cls-1{font-size:93px;fill:#43474a;font-family:KOHIBaeum;}</style></defs><g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><text class="cls-1" transform="translate(0 74.4)">CMJ</text></g></g></svg>
-
+<svg class="w-auto md:block h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277.15 113.94"><defs><style>.cls-1{fill:#43474a;}</style></defs><g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><path class="cls-1" d="M23.49,80.46q0,7.42,3.17,10.53t11.54,3.1H84.38v19.85H32.53a61.89,61.89,0,0,1-14.91-1.55,23.76,23.76,0,0,1-10.06-5,20,20,0,0,1-5.74-9A44.39,44.39,0,0,1,0,84.78V29.29A44.32,44.32,0,0,1,1.82,15.73,20.87,20.87,0,0,1,7.49,6.61a23,23,0,0,1,10-5.06A62,62,0,0,1,32.4,0H83V20H38.2q-8.37,0-11.54,3.1T23.49,33.61Z"/><path class="cls-1" d="M95.31,0h33.88l20.93,83.43q5.13-21.33,10.39-41.72T170.91,0h33.88V113.94H183.6V61.83l.4-29.7-22.95,81.81H139.18L116.1,32.13l.4,29.7v52.11H95.31Z"/><path class="cls-1" d="M215.73,113.94V94.09h28.62q4.86,0,7.08-2.22t2.23-7.09V0h23.49V85.59q0,14.44-5.47,21.4t-18.83,7Z"/></g></g></svg>
 </template>
 
 <script>

@@ -9,7 +9,7 @@
                 I've collected all the articles on my blog. 
             </div> -->
         </div>
-        <Category />
+        <Category class="mb-10"/>
         <Search />
 
         <div class="max-w-6xl grid grid-cols-1 colspan mt-5 md:mt-8 pb-14 md:pb-24 mx-auto px-6">
