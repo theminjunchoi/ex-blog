@@ -41,14 +41,14 @@ export default {
     };
   },
   head: {
-    title: "Md Solaiman | Projects",
+    title: "MinJun Choi | Projects",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Some of Projects developed by Solaiman",
+        content: "Some of Projects developed by MinJun Choi",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
