@@ -1,3 +1,0 @@
-<template>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196.84 567.08"><defs><style>.cls-1{fill:#43474a;}</style></defs><g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><path class="cls-1" d="M60.22,561.34V397.13H92v60.68h27.26l77.49-69.08V432L144.27,477.9l52.48,45.92v43.26L119.26,498.2H92v63.14Z"/><circle class="cls-1" cx="22" cy="477.45" r="22"/><path class="cls-1" d="M196.84,366.65H60.22V200.43H196.84ZM166,329.39v-91.7H91.48v91.7Z"/><path class="cls-1" d="M60.22,172.61V8.41H92V69.08h27.26L196.75,0V43.25L144.27,89.18l52.48,45.92v43.25l-77.49-68.88H92v63.14Z"/></g></g></svg>
-</template>

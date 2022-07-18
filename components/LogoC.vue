@@ -1,3 +1,0 @@
-<template>
-    <svg class="w-auto md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178.35 196.75"><defs><style>.cls-1{fill:#43474a;}</style></defs><g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><path class="cls-1" d="M5.74,60.22h164.2V92H109.27v27.26l69.08,77.49H135.1L89.17,144.27,43.25,196.75H0l68.88-77.49V92H5.74Z"/><circle class="cls-1" cx="89.63" cy="22" r="22"/></g></g></svg>
-</template>

@@ -1,45 +1,40 @@
 <template>
-  <div class="w-screen h-screen bg-gray-light ">
-    <Header />
-    <div class="mx-auto max-w-7xl ">
-
-      <div class="hidden md:block">
-        <div class="items-end flex justify-center py-20 my-20">
-          <div class="mr-2">
-            <LogoC class="hover:animate-wiggle logoC"/>
-          </div>
-          <div class="">
-            <LogoM class="hover:animate-wiggle logo"/>
-          </div>
-          <div class="ml-2">
-            <LogoJ class="hover:animate-wiggle logo"/>
-          </div>
-        </div>
+  <div class="dark:bg-gray-900 mt-6">
+    <div class="max-w-screen-lg md:flex mx-auto dark:bg-gray-900">
+      <div class="md:w-1/3 p-2 md:flex md:justify-center">
+        <AuthorCard />
       </div>
-
-      <div class="block md:hidden">
-        <div class="mx-auto flex justify-center py-10 my-10">
-          <LogoVertical class="logov mr-6"/>
-        </div>
+      <div class="md:w-2/3 px-8">
+        <AuthorIntro />
+        <Expertise />
+        <TimeLine />
       </div>
-
-
     </div>
   </div>
 </template>
 
 <script>
-
+import siteMetaInfo from "@/data/sitemetainfo";
+export default {
+  data() {
+    return {
+      siteMetaInfo: siteMetaInfo,
+    };
+  },
+  head: {
+    title: siteMetaInfo.title,
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: siteMetaInfo.description,
+      },
+    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+  },
+};
 </script>
 
-<style scoped>
-.logo {
-  height: 150px;
-}
-.logoC {
-  height: 215.5px;
-}
-.logov {
-  height: 500px;
-}
-</style>
+<style></style>
