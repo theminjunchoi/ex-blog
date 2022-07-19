@@ -12,9 +12,9 @@ const siteMetaInfo  = {
   theme: "system", // system, dark or light
   siteUrl: "https://choiminjun.com/",
   siteRepo: "#",
-  siteLogo: "../assets/profile.jpg",
-  image: "~/assets/profile.jpg",
-  socialBanner: "/static/images/twitter-card.png",
+  siteLogo: "../assets/og_image.png",
+  image: "~/assets/og_image.png",
+  socialBanner: "/static/og_image.png",
   email: "mj04300017@gmail.com",
   github: "https://github.com/minjun0430",
   githubUser: "minjun0430",

@@ -4,7 +4,7 @@
       <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200">
         Blog
       </h1>
-      <p class="text-lg text-slate-700 dark:text-slate-400">
+      <p class="text-lg text-gray-500 dark:text-slate-400">
         A record of everything from trivial to what I learned and felt
       </p>
     </header>

@@ -13,7 +13,7 @@
     <main class="relative mb-auto">
       <div class="">
         <div class="container py-12">
-          <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-2 -mx-4">
             <project-card class="md:w-full"
               v-for="item in projectsData"
               :key="item.title"
