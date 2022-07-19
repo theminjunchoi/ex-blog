@@ -24,7 +24,7 @@
           >2021-Currently</time
         >
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Studying "Bachelor Degree Computer Science and Engineering" in ChungAng University.
+          Studying "Bachelor Degree in Computer Science and Engineering" in ChungAng University.
         </p>
       </li>
       <li class="mb-10 ml-6">

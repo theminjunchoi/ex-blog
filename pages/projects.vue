@@ -14,7 +14,7 @@
       <div class="">
         <div class="container py-12">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2 -mx-4">
-            <project-card class="md:w-full"
+            <project-card class="md:w-full mx-auto w-full"
               v-for="item in projectsData"
               :key="item.title"
               :title="item.title"
