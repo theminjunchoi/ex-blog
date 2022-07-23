@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
+    "@sashido/teachablemachine-node": "^1.2.2",
     "@tailwindcss/typography": "^0.5.2",
+    "@tensorflow/tfjs": "^3.19.0",
     "clipboard": "^2.0.10",
     "core-js": "^3.19.3",
     "devicon": "^2.15.1",
