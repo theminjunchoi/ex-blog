@@ -14,7 +14,18 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { 
+        rel: "icon", 
+        type: "image/x-icon", 
+        href: "/favicon.ico" 
+      },
+      {
+        type: 'text/css',
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'
+      }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
