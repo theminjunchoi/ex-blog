@@ -1,7 +1,7 @@
 ---
 title: PSAI ep.01
-tags: TIL
-date: 2022-07-31
+tags: PSAI
+date: 2022-07-20
 description: 드디어 출발...! 미국 생존기 시작
 image: 
 author: MinJun Choi
