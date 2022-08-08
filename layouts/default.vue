@@ -4,16 +4,18 @@
     <div class="mx-auto max-w-8xl">
       <TheHeader />
       <Nuxt />
+      <VueCursor scaleElement="logo" dotColor="#41B883" :borderColor="'#41B883'"/>
       <TheFooter />
     </div>
   </section>
 </template>
 
 <script>
-
-
+import VueCursor from "~/components/VueCursor.vue";
 export default {
-
+  components: {
+    VueCursor
+  }
 };
 </script>
 

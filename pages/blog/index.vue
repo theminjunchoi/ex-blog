@@ -10,6 +10,7 @@
     </header>
     <div class="space-y-16 md:px-24 max-w-7xl ">
       <blog-item
+      class="logo"
         v-for="article in articles"
         :key="article.title"
         :title="article.title"
@@ -36,7 +37,7 @@ export default {
         "visibility",
       ])
       .where({"visibility": true})
-      .sortBy("date", "asc")
+      .sortBy("date", "desc")
       .fetch();
 
     return {

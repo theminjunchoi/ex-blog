@@ -9,13 +9,13 @@
 
       <ul class="flex flex-wrap gap-4 items-center">
         
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <Flutter class="h-8 w-8"></Flutter>
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <Vuejs class="h-10 w-10"></Vuejs>
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <Nuxt class="h-10 w-10"></Nuxt>
         </li>
       </ul>
@@ -28,19 +28,19 @@
         ETC
       </h2>
       <ul class="mb-6 flex flex-wrap gap-4">
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <Python class="h-10 w-10"></Python>
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <C class="h-10 w-10"></C>
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <Java class="h-10 w-10"></Java>
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <Firebase class="h-10 w-10"></Firebase>
         </li>
-        <li class="flex items-center">
+        <li class="flex items-center logo hover:animate-wiggle">
           <GitHub class="h-10 w-10"></GitHub>
         </li>
         
