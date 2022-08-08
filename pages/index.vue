@@ -1,10 +1,10 @@
 <template>
   <div class="dark:bg-gray-900 mt-6">
-    <div class="max-w-screen-lg md:flex mx-auto dark:bg-gray-900">
-      <div class="md:w-1/3 p-2 md:flex md:justify-center">
+    <div class="max-w-screen-lg md:flex mx-auto dark:bg-gray-900 ">
+      <div class="md:w-1/3 p-2 md:flex md:justify-center fadeinsidecom">
         <AuthorCard />
       </div>
-      <div class="md:w-2/3 px-8">
+      <div class="md:w-2/3 px-8 fadeinupcom">
         <AuthorIntro />
         <Expertise />
         <TimeLine />
@@ -38,5 +38,34 @@ export default {
 </script>
 
 <style>
-
+.fadeinupcom {
+  animation: fadeinup 0.8s;
+}
+.fadeinsidecom {
+  animation: fadeinside 0.8s;
+}
+@keyframes fadeinup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+@keyframes fadeinside {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
 </style>
