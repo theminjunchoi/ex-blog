@@ -26,6 +26,9 @@
     />
 
     <nuxt-content class="prose max-w-5xl mx-auto" :document="article" />
+
+    <Prevnext :prev="prev" :next="next" />
+    
   </div>
 </template>
 <script>
@@ -40,8 +43,16 @@ export default {
   },
   async asyncData({ $content, params }) {
     const article = await $content("articles", params.slug).fetch();
+
+    const [prev, next] = await $content('articles')
+        .only(['title', 'slug'])
+        .where({"visibility": true})
+        .sortBy('datetime', 'desc')
+        .surround(params.slug)
+        .fetch();
+
     return {
-      article: article,
+      article: article, prev: prev, next: next
     };
   },
   methods: {
