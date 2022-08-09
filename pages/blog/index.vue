@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto max-w-7xl">
-    <header class="pt-16 pb-9 sm:pb-16 sm:text-center fadeinsidecom">
+    <header class="pt-16 pb-9 sm:pb-16 sm:text-center" data-aos="fade-right">
       <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200 ">
         Blog
       </h1>
@@ -8,7 +8,7 @@
         A record of everything from trivial to what I learned and felt
       </p>
     </header>
-    <div class="space-y-16 md:px-24 max-w-7xl fadeinupcom">
+    <div class="space-y-16 md:px-24 max-w-7xl" data-aos="fade-up">
       <blog-item
       class="logo "
         v-for="article in articles"
@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import aosMixin from '~/mixins/aos';
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content("articles")
@@ -57,6 +58,8 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
+  name: 'PageIndex',
+  mixins: [aosMixin]
 };
 </script>
 
