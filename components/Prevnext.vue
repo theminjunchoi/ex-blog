@@ -3,12 +3,12 @@
         <div class="w-5/12 ml-3 md:ml-0 bg-white md:bg-gray-50 hover:bg-white border border-gray-400 md:border-gray-300 hover:border-gray-400 rounded-lg md:rounded-xl p-3 md:px-8 md:py-6 group transition duration-300">
             <!-- <NuxtLink v-if="prev" :to="{ name: 'slug', params: { slug: prev.slug } }"> -->
             <NuxtLink v-if="prev" :to='`${prev.slug}`'>
-                <div class="text-center md:text-left text-gray-500">Previous Post</div>
-                <div class="hidden md:block text-gray-700 font-medium mt-1 custom-text">{{ prev.title }}</div>
+                <div class="logo text-center md:text-left text-gray-500">Previous Post</div>
+                <div class="logo marker:hidden md:block text-gray-700 font-medium mt-1 custom-text">{{ prev.title }}</div>
             </NuxtLink>
             <nuxt-link v-else to='/'>
-                        <div class="text-center md:text-left text-gray-500">No Previous Post</div>
-                        <div class="hidden md:block text-gray-700 font-medium mt-1">
+                        <div class="logo text-center md:text-left text-gray-500">No Previous Post</div>
+                        <div class="logo hidden md:block text-gray-700 font-medium mt-1">
                             <span>홈으로 돌아가기</span>
                         </div>
             </nuxt-link>
@@ -16,12 +16,12 @@
         <div class="w-5/12 mr-3 md:mr-0 bg-white md:bg-gray-50 hover:bg-white border border-gray-400 md:border-gray-300 hover:border-gray-400 rounded-lg md:rounded-xl p-3 md:px-8 md:py-6 group transition duration-300">
             <!-- <NuxtLink v-if="next" :to="{ name: 'slug', params: { slug: next.slug } }"> -->
             <NuxtLink v-if="next" :to='`${next.slug}`'>
-                <div class="text-center md:text-right text-gray-500">Next Post</div>
-                <div class="hidden md:block text-right text-gray-700 font-medium mt-1 custom-text">{{ next.title }}</div>
+                <div class="logo text-center md:text-right text-gray-500">Next Post</div>
+                <div class="logo hidden md:block text-right text-gray-700 font-medium mt-1 custom-text">{{ next.title }}</div>
             </NuxtLink>
             <nuxt-link v-else to='/'>
-                <div class="text-center md:text-right text-gray-500">No Next Post</div>
-                <div class="hidden md:block text-right text-gray-700 font-medium mt-1">
+                <div class="logo text-center md:text-right text-gray-500">No Next Post</div>
+                <div class="logo hidden md:block text-right text-gray-700 font-medium mt-1">
                     <span>홈으로 돌아가기</span>
                 </div>
             </nuxt-link>
