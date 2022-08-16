@@ -20,11 +20,11 @@ export default {
         type: "image/x-icon", 
         href: "/favicon.ico" 
       },
-      // {
-      //   type: 'text/css',
-      //   rel: 'stylesheet',
-      //   href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'
-      // }
+      {
+        type: 'text/css',
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'
+      }
     ],
   },
 
