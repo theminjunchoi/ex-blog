@@ -91,4 +91,10 @@ export default {
 .nuxt-content p {
   margin-bottom: 20px;
 }
+code::before {
+    content: none !important;
+}
+code::after {
+    content: none !important;
+}
 </style>
