@@ -41,34 +41,5 @@ export default {
 </script>
 
 <style>
-.fadeinupcom {
-  animation: fadeinup 0.8s;
-}
-.fadeinsidecom {
-  animation: fadeinside 0.8s;
-}
-@keyframes fadeinup {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-  }
-}
-@keyframes fadeinside {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-  100% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-  }
-}
+
 </style>
