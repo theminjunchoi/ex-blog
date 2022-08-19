@@ -53,11 +53,20 @@ docker container create --name doccano \
   -v doccano-db:/data \
   -p 8000:8000 doccano/doccano
 ```
+<pre class="no-line-numbers"><code>
+docker pull doccano/doccano
+docker container create --name doccano \
+  -e "ADMIN_USERNAME=admin" \
+  -e "ADMIN_EMAIL=admin@example.com" \
+  -e "ADMIN_PASSWORD=password" \
+  -v doccano-db:/data \
+  -p 8000:8000 doccano/doccano
+</code></pre>
 
 ### Doccano를 왜 사용하나?
 spaCy의 모델을 학습시키려면, **text와 그 text의 어느 부분을, 어떤 label로 annotation을 했는지**에 대한 데이터가 필요하다. </br>
 처음에는 각 조별로 annotation을 하다가 train의 정확성을 위해 결국 나중에는 다같이 데이터를 만들었는데, resume은 110개, job description은 160개 정도 annotation을 한 것 같다.
-``` js
+<pre class="no-line-numbers language-js"><code>
 [
   {
     "id": 297,
@@ -96,8 +105,10 @@ spaCy의 모델을 학습시키려면, **text와 그 text의 어느 부분을, �
     ]
   }
 ]
-```
+</code></pre>
+
 위의 데이터가 resume 1개를 annotation 했을 때의 모습이고, 이런 데이터들이 많이 필요했다. </br>
 왜 학교나 연구실에서 ai 데이터 생성 알바를 뽑는지 알 수 있었다..ㅋㅋ
 
 **다음 포스트에서는 spaCy의 model이 어떤 식으로 학습을 하고 최적화를 하는지 알아보겠다.**
+
