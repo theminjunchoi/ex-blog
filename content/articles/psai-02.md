@@ -44,7 +44,7 @@ Doccano는 text annotation을 도와주는 tool 중에 하나다.
 사용자가 원하는 단어나 구절에 원하는 label을 갖고 annotation을 해줄 수 있다.</br>
 우리는 docker를 통해서 각자 local에서 작업을 했고 docker에서 image를 다운받아 사용하는 법은 아래와 같다.
 
-<pre class="no-line-numbers Language-default">
+<pre class="no-line-numbers language-default">
 <code>docker pull doccano/doccano
 docker container create --name doccano \
   -e "ADMIN_USERNAME=admin" \
