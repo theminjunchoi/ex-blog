@@ -5,7 +5,8 @@
     >
       👋 Hi, there!
     </h2>
-    
+
+
     <p class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify">
       I am an undergraduate student at ChungAng University. 
       I am currently majoring in Computer Science and Engineering with a strong 
