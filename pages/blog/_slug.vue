@@ -21,21 +21,21 @@
         
       </div>
     </div>
-  <div class=" grid grid-cols-3 gap-6">
-    <div class="col-span-2">
+  <div class="grid grid-cols-3 gap-12">
+    <div class="col-span-3 md:col-span-2">
       
-    <img
-      class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
-      :src="article.image"
-    />
+      <img
+        class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
+        :src="article.image"
+      />
 
-    <nuxt-content class=" prose max-w-5xl mx-auto" :document="article" />
+      <nuxt-content class=" prose max-w-5xl mx-auto" :document="article" />
     
     </div>
     
 
     
-    <aside ref="toc" class=" col-span-1 lg:flex lg:flex-col">
+    <aside ref="toc" class="col-span-1 hidden md:block  lg:flex lg:flex-col">
       <div class="sticky top-16">
         <h2
           class="uppercase text-black font-h2 text-lg lg:mt-16 tracking-wider"
