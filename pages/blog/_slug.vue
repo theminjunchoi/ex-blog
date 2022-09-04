@@ -38,12 +38,12 @@
     <aside ref="toc" class="col-span-1 hidden md:block  lg:flex lg:flex-col">
       <div class="sticky top-16">
         <h2
-          class="uppercase text-black font-h2 text-lg lg:mt-16 tracking-wider"
+          class="uppercase text-black font-h2 text-lg lg:mt-16 tracking-wider" 
         >
           Table of contents
         </h2>
         <nav class="mt-4">
-          <ul>
+          <ul class="">
             <li
               @click="tableOfContentsHeadingClick(link)"
               :class="{
@@ -55,11 +55,11 @@
             >
               <a
               :class="{
-                  'text-blue-500 hover:text-blue-600': link.id === currentlyActiveToc,
+                  'text-indigo-500 hover:text-indigo-600': link.id === currentlyActiveToc,
                   'text-black hover:gray-900': link.id !== currentlyActiveToc,
                 }"
                 role="button"
-                class="transition-colors duration-75 text-base mb-2 block"
+                class="transition-colors duration-75 text-base mb-2 block logo"
                 :href="`#${link.id}`"
                 >{{ link.text }}</a
               >
