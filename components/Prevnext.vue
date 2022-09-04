@@ -1,6 +1,6 @@
 <template>
     <div class=" flex justify-between pt-12 px-3">
-        <div class="logo w-5/12 ml-3 md:ml-0 bg-white md:bg-gray-50 hover:bg-white border border-gray-400 md:border-gray-300 hover:border-gray-400 rounded-lg md:rounded-xl p-3 md:px-8 md:py-6 group transition duration-300">
+        <div class="logo w-5/12 ml-3 md:ml-0 bg-white md:bg-gray-50 hover:bg-gray-50 border border-gray-400 md:border-gray-300 hover:border-gray-400 rounded-lg md:rounded-2xl p-3 md:px-8 md:py-6 group transition duration-300">
             <!-- <NuxtLink v-if="prev" :to="{ name: 'slug', params: { slug: prev.slug } }"> -->
             <NuxtLink v-if="prev" :to='`${prev.slug}`'>
                 <div class="logo text-center md:text-left text-gray-500">Previous Post</div>
@@ -13,7 +13,7 @@
                         </div>
             </nuxt-link>
         </div>
-        <div class="logo w-5/12 mr-3 md:mr-0 bg-white md:bg-gray-50 hover:bg-white border border-gray-400 md:border-gray-300 hover:border-gray-400 rounded-lg md:rounded-xl p-3 md:px-8 md:py-6 group transition duration-300">
+        <div class="logo w-5/12 mr-3 md:mr-0 bg-white md:bg-gray-50 hover:bg-gray-50 border border-gray-400 md:border-gray-300 hover:border-gray-400 rounded-lg md:rounded-2xl p-3 md:px-8 md:py-6 group transition duration-300">
             <!-- <NuxtLink v-if="next" :to="{ name: 'slug', params: { slug: next.slug } }"> -->
             <NuxtLink v-if="next" :to='`${next.slug}`'>
                 <div class="logo text-center md:text-right text-gray-500">Next Post</div>
