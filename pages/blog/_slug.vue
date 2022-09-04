@@ -1,6 +1,7 @@
 <template>
-  <div class="px-4 mx-auto md:max-w-5xl  mt-10">
-    <p class="text-center font-bold my-5 text-indigo-500">
+<div class="px-4 mx-auto md:max-w-6xl">
+
+<p class="text-center mt-10 font-bold my-5 text-indigo-500">
       {{ formatDate(article.date) }}
     </p>
     <h1 class="text-4xl text-gray-700 font-extrabold mb-10 text-center">
@@ -20,16 +21,59 @@
         
       </div>
     </div>
+  <div class=" grid grid-cols-3 gap-6">
+    <div class="col-span-2">
+      
     <img
       class="mx-auto w-4/5 my-10 rounded-md drop-shadow-sm"
       :src="article.image"
     />
 
-    <nuxt-content class="prose max-w-5xl mx-auto" :document="article" />
+    <nuxt-content class=" prose max-w-5xl mx-auto" :document="article" />
+    
+    </div>
+    
 
-    <Prevnext :prev="prev" :next="next" />
+    
+    <aside ref="toc" class=" col-span-1 lg:flex lg:flex-col">
+      <div class="sticky top-16">
+        <h2
+          class="uppercase text-black font-h2 text-lg lg:mt-16 tracking-wider"
+        >
+          Table of contents
+        </h2>
+        <nav class="mt-4">
+          <ul>
+            <li
+              @click="tableOfContentsHeadingClick(link)"
+              :class="{
+                'pl-4': link.depth === 3,
+              }"
+              class="toc-list"
+              v-for="link of article.toc"
+              :key="link.id"
+            >
+              <a
+              :class="{
+                  'text-blue-500 hover:text-blue-600': link.id === currentlyActiveToc,
+                  'text-black hover:gray-900': link.id !== currentlyActiveToc,
+                }"
+                role="button"
+                class="transition-colors duration-75 text-base mb-2 block"
+                :href="`#${link.id}`"
+                >{{ link.text }}</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
     
   </div>
+  <Prevnext :prev="prev" :next="next" class="mx-4"/>
+  </div>
+  
 </template>
 <script>
 import Prism from "~/plugins/prism";
@@ -39,7 +83,32 @@ export default {
     return {
       title: 0,
       siteMetadata: siteMetaInfo,
+
+      currentlyActiveToc: "",
+      observer: null,
+      observerOptions: {
+        root: this.$refs.nuxtContent,
+        threshold: 0,
+      },
     };
+  },
+  mounted() {
+    this.observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          if (entry.isIntersecting) {
+            this.currentlyActiveToc = id;
+          }
+      });
+    }, this.observerOptions);
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('.nuxt-content h2[id], .nuxt-content h3[id]').forEach((section) => {
+        this.observer.observe(section);
+    });
+  },
+  beforeDestroy() {
+    this.observer.disconnect();
   },
   async asyncData({ $content, params }) {
     const article = await $content("articles", params.slug).fetch();
@@ -59,6 +128,9 @@ export default {
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
       return new Date(date).toLocaleDateString("en", options);
+    },
+    tableOfContentsHeadingClick(link) {
+      this.currentlyActiveToc = link.id;
     },
   },
   mounted() {

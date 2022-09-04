@@ -1,5 +1,5 @@
 <template>
-  <nav class="md:max-w-6xl mx-auto sticky top-0 z-50">
+  <nav class="md:max-w-7xl mx-auto sticky top-0 z-50">
     <div
       class="bg-white flex flex-wrap items-center justify-center px-10 md:py-4 py-2 overflow-hidden border-b border-gray-200 font-2xl sm:px-4 md:overflow-visible md:px-2"
     >
