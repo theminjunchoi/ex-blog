@@ -4,7 +4,7 @@
             <!-- <NuxtLink v-if="prev" :to="{ name: 'slug', params: { slug: prev.slug } }"> -->
             <NuxtLink v-if="prev" :to='`${prev.slug}`'>
                 <div class="logo text-center md:text-left text-gray-500">Previous Post</div>
-                <div class="logo marker:hidden md:block text-gray-700 font-medium mt-1 custom-text">{{ prev.title }}</div>
+                <div class="logo marker:hidden text-center md:text-left md:block text-gray-700 font-medium mt-1 custom-text">{{ prev.title }}</div>
             </NuxtLink>
             <nuxt-link v-else to='/'>
                         <div class="logo text-center md:text-left text-gray-500">No Previous Post</div>
@@ -17,7 +17,7 @@
             <!-- <NuxtLink v-if="next" :to="{ name: 'slug', params: { slug: next.slug } }"> -->
             <NuxtLink v-if="next" :to='`${next.slug}`'>
                 <div class="logo text-center md:text-right text-gray-500">Next Post</div>
-                <div class="logo marker:hidden md:block text-gray-700 font-medium mt-1 custom-text text-right">{{ next.title }}</div>
+                <div class="logo marker:hidden md:block text-gray-700 font-medium mt-1 custom-text text-center md:text-right">{{ next.title }}</div>
             </NuxtLink>
             <nuxt-link v-else to='/'>
                 <div class="logo text-center md:text-right text-gray-500">No Next Post</div>
