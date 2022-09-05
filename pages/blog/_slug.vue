@@ -29,7 +29,7 @@
         :src="article.image"
       />
 
-      <nuxt-content class=" prose max-w-5xl mx-auto" :document="article" />
+      <nuxt-content class=" prose max-w-5xl mx-auto leading-loose" :document="article" />
     
     </div>
     
@@ -83,7 +83,6 @@ export default {
     return {
       title: 0,
       siteMetadata: siteMetaInfo,
-
       currentlyActiveToc: "",
       observer: null,
       observerOptions: {
@@ -101,7 +100,6 @@ export default {
           }
       });
     }, this.observerOptions);
-
     // Track all sections that have an `id` applied
     document.querySelectorAll('.nuxt-content h2[id], .nuxt-content h3[id]').forEach((section) => {
         this.observer.observe(section);
@@ -112,14 +110,12 @@ export default {
   },
   async asyncData({ $content, params }) {
     const article = await $content("articles", params.slug).fetch();
-
     const [prev, next] = await $content('articles')
         .only(['title', 'slug'])
         .where({"visibility": true})
         .sortBy('datetime', 'asc')
         .surround(params.slug)
         .fetch();
-
     return {
       article: article, prev: prev, next: next
     };
