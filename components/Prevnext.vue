@@ -17,7 +17,7 @@
             <!-- <NuxtLink v-if="next" :to="{ name: 'slug', params: { slug: next.slug } }"> -->
             <NuxtLink v-if="next" :to='`${next.slug}`'>
                 <div class="logo text-center md:text-right text-gray-500">Next Post</div>
-                <div class="logo hidden md:block text-right text-gray-700 font-medium mt-1 custom-text">{{ next.title }}</div>
+                <div class="logo marker:hidden md:block text-gray-700 font-medium mt-1 custom-text">{{ next.title }}</div>
             </NuxtLink>
             <nuxt-link v-else to='/'>
                 <div class="logo text-center md:text-right text-gray-500">No Next Post</div>
