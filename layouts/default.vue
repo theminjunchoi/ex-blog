@@ -4,7 +4,7 @@
     <div class="mx-auto max-w-8xl">
       <TheHeader />
       <Nuxt />
-      <VueCursor scaleElement="logo" dotColor="#41B883" :borderColor="'#41B883'"/>
+      <VueCursor class="hidden md:block" scaleElement="logo" dotColor="#41B883" :borderColor="'#41B883'"/>
       <TheFooter />
     </div>
   </section>
