@@ -71,7 +71,7 @@
 
     
   </div>
-  <Prevnext :prev="prev" :next="next" class="mx-4"/>
+  <Prevnext :prev="prev" :next="next" class="mx-4 mt-24"/>
   </div>
   
 </template>
