@@ -2,7 +2,7 @@ const siteMetadata = {
   title: "MinJun Choi",
   author: "MinJun Choi",
   author_image: "/profile.jpg",
-  position: "Growing Developer",
+  position: "Problem Solver",
   location: "Incheon, South Korea",
   headerTitle: "MinJun Choi",
   slogan: "Let's start coding",

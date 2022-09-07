@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto max-w-7xl">
-    <header class="pt-16 pb-9 sm:pb-16 sm:text-center" data-aos="fade-right">
+    <header class="pt-16 pb-9 mb-4 sm:pb-16 sm:text-center" data-aos="fade-right">
       <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200 ">
         Blog
       </h1>
