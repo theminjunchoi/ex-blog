@@ -1,0 +1,11 @@
+name: '컴퓨터구조'
+description: '컴퓨터 시스템이 어떻게 구성되어있고 설계되어있는지 공부합니다'
+slug: computer-architecture
+order: 1
+category: [
+  "1. Computer Abstractions and Technology", 
+  "2. Instructions: Language of the Computer", 
+  "3. Arithmetic for Computers", 
+  "4. The Processor", 
+  ]
+state: '공부 중'
