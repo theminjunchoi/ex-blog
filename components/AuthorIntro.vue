@@ -5,7 +5,7 @@
     >
       👋 Hi, there!
     </h2>
-
+    
 
     <p class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify">
       I am an undergraduate student at ChungAng University. 
@@ -17,5 +17,15 @@
   </div>
 </template>
 <script>
-
+export default {
+  data() {
+    return {
+    }
+  },
+  methods: {
+  }
+}
 </script>
+<style scoped>
+
+</style>

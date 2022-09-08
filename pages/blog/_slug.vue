@@ -126,7 +126,7 @@ export default {
       return new Date(date).toLocaleDateString("en", options);
     },
     tableOfContentsHeadingClick(link) {
-      this.currentlyActiveToc = link.id+1;
+      this.currentlyActiveToc = link.id;
     },
   },
   mounted() {
