@@ -133,7 +133,7 @@ export default {
         });
     },
 async asyncData({ $content, params }) {
-// 여기(curriculumName)를 수정해주면 돼요!
+
         const curriculumName = 'computer-architecture';
         const curriname = await $content(curriculumName, params.slug)
         .fetch();

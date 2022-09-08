@@ -8,10 +8,10 @@
         A record of everything that I'm studying
       </p>
     </header>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60" data-aos="fade-up">
       <div v-for='study of studies' :key="study">
         <nuxt-link :to='`study/${study.slug}/1-1`'>
-          <div class="group">
+          <div class="group" >
             <div>
               <div class=" mb-1.5 flex items-center keep-all">
                 <div class="text-slate-600 text-xl font-semibold group-hover:text-indigo-400 transition duration-200">{{study.name}}</div> 
