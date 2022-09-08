@@ -12,8 +12,8 @@
                     <div class="font-medium text-slate-600 text-lg mb-2.5">{{`${cats[`cat_${j}`]}`}}</div>
                     <div v-for='list of lists[`list_${j}`]' :key="list" class="pl-5">
                                 <div class="group">
-                                    <div class="keep-all text-slate-600 text mb-2 group-hover:text-blue-500 transition duration-200 nav-item">
-                                        <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item">
+                                    <div class=" keep-all text-slate-600 text mb-2 group-hover:text-indigo-400 transition duration-200 nav-item">
+                                        <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item logo">
                                         {{list.slug}}. {{list.title}}
                                         </nuxt-link>
                                     </div>
@@ -71,7 +71,7 @@
                                 <div class="font-medium text-slate-600 mb-2.5">{{`${cats[`cat_${j}`]}`}}</div>
                                 <div v-for='list of lists[`list_${j}`]' :key="list" class="pl-5">
                                             <div class="group">
-                                                <div class="keep-all text-slate-600 text-sm mb-2 group-hover:text-indigo-400 transition duration-200 nav-item">
+                                                <div class=" keep-all text-slate-600 text-sm mb-2 group-hover:text-indigo-400 transition duration-200 nav-item">
                                                     <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item">
                                                     {{list.slug}}. {{list.title}}
                                                     </nuxt-link>
