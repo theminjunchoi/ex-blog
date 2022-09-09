@@ -1,7 +1,7 @@
 <template>
 <div class="flex">
 
-    <div class="hidden md:block min-w-fit max-w-max py-10 px-4 border-r border-gray-300 min-h-screen">
+    <div class="hidden md:block min-w-fit max-w-max py-10 px-4 md:-pr-2 border-r border-gray-300 min-h-screen">
 
         <div class="font-semibold text-slate-600 text-xl mb-4">{{currilist[0]["name"]}}</div>
 
@@ -12,7 +12,7 @@
                     <div class="font-medium text-slate-600 text-lg mb-2.5">{{`${cats[`cat_${j}`]}`}}</div>
                     <div v-for='list of lists[`list_${j}`]' :key="list" class="pl-5">
                                 <div class="group">
-                                    <div class=" keep-all text-slate-600 text mb-2 group-hover:text-indigo-400 transition duration-200 nav-item">
+                                    <div class=" keep-all text-slate-600 text mb-2 group-hover:text-indigo-500 transition duration-200 nav-item">
                                         <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item logo">
                                         {{list.slug}}. {{list.title}}
                                         </nuxt-link>
@@ -71,7 +71,7 @@
                                 <div class="font-medium text-slate-600 mb-2.5">{{`${cats[`cat_${j}`]}`}}</div>
                                 <div v-for='list of lists[`list_${j}`]' :key="list" class="pl-5">
                                             <div class="group">
-                                                <div class=" keep-all text-slate-600 text-sm mb-2 group-hover:text-indigo-400 transition duration-200 nav-item">
+                                                <div class=" keep-all text-slate-600 text-sm mb-2 group-hover:text-indigo-500 transition duration-200 nav-item">
                                                     <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item">
                                                     {{list.slug}}. {{list.title}}
                                                     </nuxt-link>
@@ -93,7 +93,7 @@
             <p class="custom-text leading-normal mb-6 text-base md:text-lg text-slate-600 font-medium">{{curriname.category}} > {{curriname.slug}}. {{curriname.title}}</p>
             <p class="custom-text leading-normal mb-8 text-2xl md:text-3xl text-slate-800 font-semibold">{{curriname.title}}</p>
 
-            <nuxt-content :document="curriname" class="prose prose-quoteless max-w-5xl custom-text"/>
+            <nuxt-content :document="curriname" class="prose prose-quoteless max-w-5xl custom-text mb-52"/>
 
             <StudyPrevnext :prev="prev" :next="next" :currititle="currititle" />
 

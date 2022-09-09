@@ -10,7 +10,7 @@
     </header>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12" data-aos="fade-up">
       <div v-for='study of studies' :key="study">
-        <nuxt-link :to='`study/${study.slug}/1-1`'>
+        <nuxt-link :to='`study/${study.slug}/0-1`'>
           <div class="group" >
             <div>
               <div class=" mb-1.5 flex items-center keep-all">
