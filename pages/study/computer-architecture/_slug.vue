@@ -160,7 +160,7 @@ async asyncData({ $content, params }) {
         return { curriname, currilist, prev, next, currititle, curriculumName, cats, lists}
     },
     head: {
-    title: "MinJun Choi | Blogs",
+    title: "MinJun Choi | Study",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },

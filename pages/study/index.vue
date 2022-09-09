@@ -2,7 +2,7 @@
   <div class="max-w-6xl mx-auto">
     <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mt-2 h-52 rounded-2xl" data-aos="fade-down"></div>
     <nuxt-img
-        src='/profile.jpg'
+        src='/profile2.jpg'
         loading="lazy"
         alt="me"
         class="mx-auto logo shadow-2xl md:h-40 md:w-40 h-40 w-40 md:-mt-20 -mt-20 rounded-full"
