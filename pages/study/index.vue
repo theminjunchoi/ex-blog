@@ -1,14 +1,22 @@
 <template>
   <div class="max-w-6xl mx-auto">
-    <header class="pt-16 pb-9 mb-4 sm:pb-16 sm:text-center" data-aos="fade-right">
+    <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mt-2 h-52 rounded-2xl" data-aos="fade-down"></div>
+    <nuxt-img
+        src='/profile.jpg'
+        loading="lazy"
+        alt="me"
+        class="mx-auto logo shadow-2xl md:h-40 md:w-40 h-40 w-40 md:-mt-20 -mt-20 rounded-full"
+        data-aos="fade-up"
+      />
+    <header class="pt-6 pb-9 mb-4 sm:pb-16 text-center" data-aos="fade-right">
       <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200 ">
         Study
       </h1>
       <p class="text-lg text-gray-500 dark:text-slate-400">
-        A record of everything that I'm studying
+        A record of what I'm studying
       </p>
     </header>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12" data-aos="fade-up">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5" data-aos="fade-up">
       <div v-for='study of studies' :key="study">
         <nuxt-link :to='`study/${study.slug}/0-1`'>
           <div class="group" >

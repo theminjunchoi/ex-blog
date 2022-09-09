@@ -1,6 +1,14 @@
 <template>
-  <div class="mx-auto max-w-7xl">
-    <header class="pt-16 pb-9 mb-4 sm:pb-16 sm:text-center" data-aos="fade-right">
+  <div class="mx-auto max-w-6xl">
+    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 mt-2 h-52 rounded-2xl" data-aos="fade-down"></div>
+    <nuxt-img
+        src='/profile.jpg'
+        loading="lazy"
+        alt="me"
+        class="mx-auto logo shadow-2xl md:h-40 md:w-40 h-40 w-40 md:-mt-20 -mt-20 rounded-full"
+        data-aos="fade-up"
+      />
+    <header class="pt-6 pb-9 mb-4 sm:pb-16 text-center" data-aos="fade-right">
       <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200 ">
         Blog
       </h1>
@@ -8,9 +16,10 @@
         A record of everything from trivial to what I learned and felt
       </p>
     </header>
-    <div class="space-y-16 md:px-24 max-w-7xl" data-aos="fade-up">
+    <div class="space-y-12 md:px-24 max-w-7xl " >
       <blog-item
-      class="logo "
+      class="logo"
+      data-aos="fade-up"
         v-for="article in articles"
         :key="article.title"
         :title="article.title"
