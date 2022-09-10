@@ -1,7 +1,7 @@
 ---
 title: Machine Learning Test
 tags: machine-learning
-date: 2022-07-23
+date: 2022.07.23
 description: A machine learning test that can test for mask presence.
 image: 
 author: MinJun Choi

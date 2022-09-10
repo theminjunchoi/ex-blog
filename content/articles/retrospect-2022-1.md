@@ -2,7 +2,7 @@
 title: 2022년 상반기 회고글
 slug: retrospect-2022-1
 tags: retrospect
-date: 2022-09-05
+date: 2022.09.05
 description: 앞으로의 방향성에 대하여
 image: 
 author: MinJun Choi

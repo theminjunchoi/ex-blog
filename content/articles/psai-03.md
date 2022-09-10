@@ -2,7 +2,7 @@
 title: PSAI ep.03
 slug: psai-03
 tags: PSAI
-date: 2022-08-01
+date: 2022.08.01
 description: spaCy 톺아보기
 image: 
 author: MinJun Choi
