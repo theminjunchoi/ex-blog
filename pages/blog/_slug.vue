@@ -1,12 +1,13 @@
 <template>
 <div class="px-4 mx-auto md:max-w-6xl">
 
-<p class="text-center mt-10 font-bold my-5 text-indigo-500">
+    <p class="text-center mt-10 font-bold my-5 text-indigo-500">
       {{ formatDate(article.date) }}
     </p>
-    <h1 class="text-4xl text-gray-700 font-extrabold mb-10 text-center">
+    <h1 class="text-4xl text-gray-700 font-extrabold mb-2 text-center">
       {{ article.title }}
     </h1>
+    
     <div class="flex items-center font-medium mt-6 sm:mx-3 justify-center">
       <nuxt-img
         :src="siteMetadata.author_image"
@@ -20,6 +21,11 @@
         </div>
         
       </div>
+    </div>
+    <div class="mt-8 flex items-center justify-center mx-auto text-center">
+        <div v-if="`${article.tags}` == 'PSAI'" class="text-center ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">{{article.tags}}</div> 
+        <div v-else-if="`${article.tags}` == 'retrospect'"  class="text-center ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-emerald-500 rounded font-normal">{{article.tags}}</div> 
+        <div v-else > </div> 
     </div>
   <div class="grid grid-cols-3 gap-12">
     <div class="col-span-3 md:col-span-2">
