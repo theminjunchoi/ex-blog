@@ -133,7 +133,6 @@ export default {
         });
     },
 async asyncData({ $content, params }) {
-
         const curriculumName = 'computer-architecture';
         const curriname = await $content(curriculumName, params.slug)
         .fetch();
