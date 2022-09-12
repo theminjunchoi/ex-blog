@@ -91,7 +91,7 @@
 
         <div class="max-w-5xl pt-8 pb-24 px-6 md:px-11 mx-auto md:-mt-20">
             <p class="custom-text leading-normal mb-6 text-base md:text-lg text-slate-600 font-medium">{{curriname.category}} > {{curriname.slug}}. {{curriname.title}}</p>
-            <p class="custom-text leading-normal mb-8 text-2xl md:text-3xl text-slate-800 font-semibold">{{curriname.title}}</p>
+            <p class="custom-text leading-normal mb-8 text-2xl md:text-4xl text-slate-800 font-semibold">{{curriname.title}}</p>
 
             <nuxt-content :document="curriname" class="prose prose-quoteless max-w-5xl custom-text mb-52"/>
 
