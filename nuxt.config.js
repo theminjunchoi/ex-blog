@@ -29,10 +29,20 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/css/main.css"],
+  css: [
+    {
+      src: 'katex/dist/katex.min.css',
+      defer: true
+    },
+    "@/assets/css/main.css"
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/vuetyper.js', ssr: false},],
+  plugins: [
+    { src: '~/plugins/vuetyper.js', ssr: false},
+    { src: '~/plugins/math.js', ssr: false},
+    
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -68,7 +78,7 @@ export default {
       prism: {
         theme: "prism-themes/themes/prism-dracula.css",
       },
-      remarkPlugins: ['remark-math'],
+      remarkPlugins: ['remark-math', 'remark-textr'],
       rehypePlugins: ['rehype-katex']
     },
   },
