@@ -61,7 +61,7 @@
             >
               <a
               :class="{
-                  'text-indigo-500 hover:text-indigo-600': link.id === currentlyActiveToc,
+                  'text-black hover:gray-900': link.id === currentlyActiveToc,
                   'text-black hover:gray-900': link.id !== currentlyActiveToc,
                 }"
                 role="button"
