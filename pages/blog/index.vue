@@ -41,6 +41,7 @@
                 <div class="flex items-center ">
                     <div v-if="`${article.tags}` == 'PSAI'" class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">{{article.tags}}</div> 
                     <div v-else-if="`${article.tags}` == 'retrospect'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-emerald-500 rounded font-normal">{{article.tags}}</div> 
+                    <div v-else-if="`${article.tags}` == 'etc'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-yellow-500 rounded font-normal">{{article.tags}}</div>
                     <div v-else > </div> 
                 </div>
               </div>
