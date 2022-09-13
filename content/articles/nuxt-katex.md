@@ -24,21 +24,22 @@ visibility: true
 일단 Nuxt content에서 katex를 지원해주는 방법에 대한 거의 모든 글을 읽어봤을만큼 몇 시간동안 구글링을 해보고 모든 버전들끼리 조합을 해본 뒤에 정답을 찾았다. 또한 `nuxt/content`을 바꿔주게 되면 수식이 필요없는 파일들에게도 영향이 갈 수 있어서 `rehype-katex`, `remark-math` package들만 버전 조합을 찾아봤다. npm downgrade를 하면 쉬운데 에러가 많이 나서 매번 **노드 모듈**들을 지워주고 **package.json**을 수정한다음에 새롭게 모듈들을 깔아보면서 로컬에서 실행해보며 확인해주었다.
 
 ### 결론
-```json
-"dependencies": {
+<pre class="no-line-numbers language-javascript">
+<code>"dependencies": {
     "@nuxt/content": "^1.15.1",
     "rehype-katex": "^4.0.0",
     "remark-math": "^4.0.0",
     "katex": "^0.15.3",
   },
-```
+</code></pre>
+
 <center>package.json</center>
 
 우선 위에서부터 언급한 3가지 package들은 저 버전들로 설치를 해놔야 호환이 된다. 특히 `rehype-katex`는 5버전, `remark-math`는 4버전을 넘기면 안된다. 추가로 `katex` package도 필요한데, 이 package가 없으면 수식을 인식하긴하는데 우리가 원하는대로 깔끔하게 적용되지 않는다.
 </br></br>
 
-```javascript
-css: [
+<pre class="no-line-numbers language-javascript">
+<code>css: [
     {
       src: 'katex/dist/katex.min.css',
       defer: true
@@ -51,7 +52,8 @@ content: {
       rehypePlugins: ['rehype-katex']
     },
   },
-```
+</code></pre>
+
 <center>nuxt.config.js</center>
 
 그리고 나서 **nuxt.config.js** 파일에 가서 위와 같이 적용을 시켜줘야한다.
