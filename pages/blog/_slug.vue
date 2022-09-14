@@ -119,7 +119,7 @@ export default {
     const [prev, next] = await $content('articles')
         .only(['title', 'slug'])
         .where({"visibility": true})
-        .sortBy('datetime', 'asc')
+        .sortBy('date', 'asc')
         .surround(params.slug)
         .fetch();
     return {
