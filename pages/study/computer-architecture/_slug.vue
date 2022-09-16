@@ -96,7 +96,16 @@
             
             
 
-            <nuxt-content :document="curriname" class="prose prose-quoteless max-w-5xl custom-text mb-52 prose-code:text-white prose-code:font-normal"/>
+            <nuxt-content :document="curriname" 
+            class="
+            prose 
+            prose-quoteless 
+            max-w-5xl 
+            custom-text 
+            mb-40
+            prose-code:text-white 
+            prose-code:text-base 
+            prose-code:font-normal"/>
 
             <StudyPrevnext :prev="prev" :next="next" :currititle="currititle" />
 
