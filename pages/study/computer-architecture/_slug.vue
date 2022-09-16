@@ -104,7 +104,7 @@
             custom-text 
             mb-40
             prose-code:text-white 
-            prose-code:text-base 
+            prose-code:text-sm 
             prose-code:font-normal"/>
 
             <StudyPrevnext :prev="prev" :next="next" :currititle="currititle" />
