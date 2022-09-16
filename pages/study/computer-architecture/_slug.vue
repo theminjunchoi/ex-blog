@@ -92,11 +92,11 @@
         <div class="max-w-5xl pt-8 pb-24 px-6 md:px-11 mx-auto md:-mt-20">
             <p class="custom-text leading-normal mb-6 text-base md:text-lg text-slate-600 font-medium">{{curriname.category}} > {{curriname.slug}}. {{curriname.title}}</p>
             <p class="custom-text leading-normal mb-6 text-2xl md:text-4xl text-slate-800 font-semibold">{{curriname.title}}</p>
-            <p class="custom-text leading-normal mb-16 text-base md:text-lg text-indigo-500 font-semibold text-right">Updated at {{curriname.date}}</p>
+            <p class="custom-text leading-normal mb-16 text-base md:text-lg text-slate-400 font-medium">Updated at {{curriname.date}}</p>
             
             
 
-            <nuxt-content :document="curriname" class="prose prose-quoteless max-w-5xl custom-text mb-52"/>
+            <nuxt-content :document="curriname" class="prose prose-quoteless max-w-5xl custom-text mb-52 prose-code:text-white"/>
 
             <StudyPrevnext :prev="prev" :next="next" :currititle="currititle" />
 
@@ -195,4 +195,5 @@ img{
 .nav-item.nuxt-link-active {
     color: #3b82f6;
 }
+
 </style>
