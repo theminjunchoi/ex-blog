@@ -8,7 +8,7 @@
         class="mx-auto logo shadow-2xl md:h-40 md:w-40 h-40 w-40 md:-mt-20 -mt-20 rounded-full"
         data-aos="fade-up"
       />
-    <header class="pt-6 pb-9 mb-4 sm:pb-16 text-center" data-aos="fade-right">
+    <header class="pt-6 pb-9 sm:pb-16 text-center" data-aos="fade-right">
       <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200 ">
         Study
       </h1>
@@ -17,11 +17,11 @@
       </p>
     </header>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 mb-60 pb-12 mx-5" data-aos="fade-up">
-      <div v-for='study of studies' :key="study">
+      <div v-for='study of studies' :key="study" >
         <nuxt-link :to='`study/${study.slug}/0-1`'>
           <div class="group" >
-            <div>
-              <div class=" mb-1.5 flex items-center keep-all">
+            <div >
+              <div class=" mb-1.5 flex items-center keep-all" >
                 <div class="text-slate-600 text-xl font-semibold group-hover:text-indigo-400 transition duration-200 logo">{{study.name}}</div> 
                 <div class="flex items-center ">
                     <div v-if="`${study.state}` == '공부 완료'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">공부 완료</div> 
