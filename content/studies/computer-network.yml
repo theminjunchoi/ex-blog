@@ -1,0 +1,10 @@
+name: '컴퓨터통신'
+description: '컴퓨터 네트워크 및 응용의 기반이 되는 데이터 통신 및 컴퓨터 통신망 기술을 공부합니다'
+slug: computer-network
+order: 2
+category: [
+  "0. Intro", 
+  "1. Foundation",
+  "2. Getting connected",
+  ]
+state: '공부 중'

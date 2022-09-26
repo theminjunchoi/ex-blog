@@ -60,7 +60,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Some of Projects developed by MinJun Choi",
+        content: "A record of what I'm studying by MinJun Choi",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
