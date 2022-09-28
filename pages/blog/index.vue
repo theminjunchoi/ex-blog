@@ -8,7 +8,7 @@
         class="mx-auto logo shadow-2xl md:h-40 md:w-40 h-40 w-40 md:-mt-20 -mt-20 rounded-full"
         data-aos="fade-up"
       />
-    <header class="pt-6 pb-9  sm:pb-16 text-center" data-aos="fade-right">
+    <header class="pt-6 pb-9 sm:pb-8 text-center" data-aos="fade-right">
       <h1 class="mb-4 text-4xl sm:text-6xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200 ">
         Blog
       </h1>
@@ -16,22 +16,16 @@
         A record of everything from trivial to what I learned and felt
       </p>
     </header>
-
-    <!-- <div class="space-y-12 md:px-24 max-w-7xl " >
-      <blog-item
-      class="logo"
-      data-aos="fade-up"
-        v-for="article in articles"
-        :key="article.title"
-        :title="article.title"
-        :description="article.description"
-        :date="article.date"
-        :slug="article.slug"
-      ></blog-item>
-    </div> -->
-    <div class="border-b border-gray-300 text-right text-lg text-slate-600 font-semibold mb-8">Recent Posts</div>
+    
+    <div data-aos="zoom-in" class="select-none px-4 items-center justify-center sm:justify-start overflow-hidden flex pt-4 md:mb-4">
+      <nav class="flex flex-wrap items-center justify-center flex-row space-x-2 sm:space-x-4" aria-label="Tabs">
+        <button @click="currentCategory = category" :class="{ 'bg-indigo-200 text-slate-800': category === currentCategory }" v-for="category in categories" :key="category" class="flex text-gray-300 focus:outline-none focus:ring-transparent focus:ring-offset-transparent hover:text-hot-pink px-3 py-2 font-medium text-sm rounded-xl">
+          {{ category }}
+        </button>
+      </nav>
+    </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-x-5 gap-y-12 mb-60 pb-12 mx-5" data-aos="fade-up">
-      <div v-for='article of articles' :key="article">
+      <div v-for='article of postsByCategories' :key="article">
         <nuxt-link :to='`blog/${article.slug}`'>
           <div class="group" >
             <div class="">
@@ -39,9 +33,9 @@
                 <div class="text-slate-600 text-xl font-semibold group-hover:text-indigo-400 transition duration-200 logo">{{article.title}}</div> 
                  
                 <div class="flex items-center ">
-                    <div v-if="`${article.tags}` == 'PSAI'" class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">{{article.tags}}</div> 
-                    <div v-else-if="`${article.tags}` == 'retrospect'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-emerald-500 rounded font-normal">{{article.tags}}</div> 
-                    <div v-else-if="`${article.tags}` == 'etc'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-yellow-500 rounded font-normal">{{article.tags}}</div>
+                    <div v-if="`${article.category}` == 'PSAI'" class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">{{article.category}}</div> 
+                    <div v-else-if="`${article.category}` == 'retrospect'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-emerald-500 rounded font-normal">{{article.category}}</div> 
+                    <div v-else-if="`${article.category}` == 'etc'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-yellow-500 rounded font-normal">{{article.category}}</div>
                     <div v-else > </div> 
                 </div>
               </div>
@@ -57,16 +51,40 @@
 </template>
 
 <script>
-import aosMixin from '~/mixins/aos';
+const ALL = 'all'
+
+import aosMixin from '~/mixins/aos'; 
+
 export default {
-  async asyncData({ $content, params }) {
+  computed: {
+    categories() {
+      return [ALL, ...new Set(this.articles.map(article => article.category))]
+    },
+    postsByCategories() {
+      if (this.currentCategory === ALL)
+        return this.articles
+      return this.articles.filter(article => article.category === this.currentCategory)
+    }
+  },
+  data() {
+    return {
+      currentCategory: ALL,
+      ALL: ALL, // exporting it to template
+    }
+  },
+  head() {
+    return {
+      title: `blog -- ${this.$config.name}`
+    }
+  },
+  async asyncData({ $content }) {
     const articles = await $content("articles")
       .only([
         "title",
         "description",
         "img",
         "slug",
-        "tags",
+        "category",
         "author",
         "date",
         "visibility",

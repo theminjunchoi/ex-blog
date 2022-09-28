@@ -1,7 +1,7 @@
 ---
 title: Nuxt content에서 Mathtype 사용하기
 slug: nuxt-katex
-tags: etc
+category: etc
 date: 2022.09.13
 description: 수식과 관련된 Package 알아보기
 image: 

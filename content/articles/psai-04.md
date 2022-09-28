@@ -1,7 +1,7 @@
 ---
 title: PSAI ep.04
 slug: psai-04
-tags: PSAI
+category: PSAI
 date: 2022.08.13
 description: PSAI 마지막 에피소드
 image: 
