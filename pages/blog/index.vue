@@ -18,8 +18,8 @@
     </header>
     
     <div data-aos="zoom-in" class="select-none px-4 items-center justify-center sm:justify-start overflow-hidden flex pt-4 md:mb-6 mb-8">
-      <nav class="flex flex-wrap items-center justify-center flex-row space-x-2 sm:space-x-4" aria-label="Tabs">
-        <button @click="currentCategory = category" :class="{ 'bg-indigo-200 text-slate-800': category === currentCategory }" v-for="category in categories" :key="category" class="flex text-gray-300 focus:outline-none focus:ring-transparent focus:ring-offset-transparent hover:text-hot-pink px-3 py-2 font-medium text-sm rounded-xl">
+      <nav class="flex flex-wrap items-center justify-center flex-row space-x-2 sm:space-x-4" >
+        <button @click="currentCategory = category" :class="{ ' bg-indigo-200 text-slate-800 ': category === currentCategory }" v-for="category in categories" :key="category" class="flex logo text-gray-300 focus:outline-none focus:ring-transparent focus:ring-offset-transparent px-3 py-2 font-medium text-sm rounded-xl">
           {{ category }}
         </button>
       </nav>
