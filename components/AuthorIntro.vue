@@ -2,7 +2,14 @@
   <div class="mb-6">
     <div class="mt-6 text-4xl text-gray-700 font-bold logo">
       <vue-typer
-        :text='["👋 Hi, there!","I am MinJun Choi 😄","Your Friendly Developer 💻", "A Problem Solver ✏️", "Growing Programmer 🚀"]'
+        :text='[
+        "👋 Hi, there!",
+        "I am MinJun Choi 😄",
+        "Your Friendly Developer 💻", 
+        "A Problem Solver 💡", 
+        "A Growing Programmer 🚀",
+        "A Tech Enthusiast 🔍"
+        ]'
         :repeat='Infinity'
         :shuffle='false'
         initial-action='typing'
@@ -26,6 +33,7 @@
     </p>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -36,6 +44,7 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 >>> .vue-typer .custom.char {
   @apply text-gray-700;
