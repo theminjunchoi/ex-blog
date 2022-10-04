@@ -11,13 +11,13 @@
                 <div v-if="cats[`cat_${j}`]!=null">
                     <div class="font-medium text-slate-600 text-lg mb-2.5">{{`${cats[`cat_${j}`]}`}}</div>
                     <div v-for='list of lists[`list_${j}`]' :key="list" class="pl-5">
-                                <div class="group">
-                                    <div class=" keep-all text-slate-600 text mb-2 group-hover:text-indigo-500 transition duration-200 nav-item">
-                                        <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item logo">
-                                        {{list.slug}}. {{list.title}}
-                                        </nuxt-link>
-                                    </div>
-                                </div>
+                        <div class="group">
+                            <div class=" keep-all text-slate-600 text mb-2 group-hover:text-indigo-500 transition duration-200 nav-item">
+                                <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item logo">
+                                {{list.slug}}. {{list.title}}
+                                </nuxt-link>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div v-else></div>
@@ -70,13 +70,13 @@
                             <div v-if="cats[`cat_${j}`]!=null">
                                 <div class="font-medium text-slate-600 mb-2.5">{{`${cats[`cat_${j}`]}`}}</div>
                                 <div v-for='list of lists[`list_${j}`]' :key="list" class="pl-5">
-                                            <div class="group">
-                                                <div class=" keep-all text-slate-600 text-sm mb-2 group-hover:text-indigo-500 transition duration-200 nav-item">
-                                                    <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item">
-                                                    {{list.slug}}. {{list.title}}
-                                                    </nuxt-link>
-                                                </div>
-                                            </div>
+                                    <div class="group">
+                                        <div class=" keep-all text-slate-600 text-sm mb-2 group-hover:text-indigo-500 transition duration-200 nav-item">
+                                            <nuxt-link :to="{path: `/study/${currititle}/${list.slug}`}" replace class="nav-item">
+                                            {{list.slug}}. {{list.title}}
+                                            </nuxt-link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div v-else></div>
