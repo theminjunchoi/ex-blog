@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full mx-auto sticky backdrop-filter backdrop-blur top-0 z-50 ">
+  <nav class="w-full mx-auto sticky  backdrop-blur-sm top-0 z-50 ">
     <div
       class=" flex flex-wrap items-center justify-center md:py-4 py-2 overflow-hidden  font-2xl sm:px-4 md:overflow-visible md:px-2"
     >
