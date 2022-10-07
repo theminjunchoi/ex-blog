@@ -1,5 +1,5 @@
 <template>
-<div class="flex">
+<div class="flex border-t border-gray-300">
 
     <div class="hidden md:block w-[32rem] py-10 px-4 md:-pr-2 border-r border-gray-300 min-h-screen">
 

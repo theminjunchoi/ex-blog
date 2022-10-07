@@ -1,7 +1,7 @@
 <template>
-  <nav class="w-full mx-auto sticky  top-0 z-50 ">
+  <nav class="w-full mx-auto sticky backdrop-filter backdrop-blur-sm top-0 z-50 ">
     <div
-      class="bg-white flex flex-wrap items-center justify-center md:py-4 py-2 overflow-hidden border-b border-gray-300 font-2xl sm:px-4 md:overflow-visible md:px-2"
+      class=" flex flex-wrap items-center justify-center md:py-4 py-2 overflow-hidden  font-2xl sm:px-4 md:overflow-visible md:px-2"
     >
       <input class="menu-btn hidden" type="checkbox" id="menu-btn" />
       <label

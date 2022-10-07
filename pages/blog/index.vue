@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto max-w-6xl">
-    <div class="bg-gradient-to-r from-emerald-500 to-blue-500 mt-2 h-52 rounded-2xl" data-aos="fade-down"></div>
+    <div class="bg-gradient-to-r from-emerald-500 to-blue-500 mt-2 h-52 rounded-2xl shadow-2xl" data-aos="fade-down"></div>
     <nuxt-img
         src='/profile3.jpg'
         loading="lazy"
