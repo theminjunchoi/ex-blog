@@ -41,7 +41,7 @@ export default {
   plugins: [
     { src: '~/plugins/vuetyper.js', ssr: false},
     { src: '~/plugins/math.js', ssr: false},
-    
+    { src: '~/plugins/vue-particles', ssr: false},
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

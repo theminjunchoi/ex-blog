@@ -1,6 +1,23 @@
 <template>
   <div class="max-w-6xl mx-auto">
-    <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mt-2 h-52 rounded-2xl shadow-2xl" data-aos="fade-down"></div>
+    <Particles 
+      color="#0DAEFF"
+      :particleOpacity="0.7"
+      :particlesNumber="80"
+      shapeType="circle"
+      :particleSize="4"
+      linesColor="#0DAEFF"
+      :linesWidth="1"
+      :lineLinked="true"
+      :lineOpacity="0.4"
+      :linesDistance="150"
+      :moveSpeed="3"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      clickMode="push"
+      class="h-52 rounded-2xl shadow-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" data-aos="fade-down"> 
+    </Particles>
     <nuxt-img
         src='/profile2.jpg'
         loading="lazy"
