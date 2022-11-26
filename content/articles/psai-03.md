@@ -1,7 +1,7 @@
 ---
 title: PSAI ep.03
 slug: psai-03
-category: PSAI
+category: club
 date: 2022.08.01
 description: spaCy 톺아보기
 image: 

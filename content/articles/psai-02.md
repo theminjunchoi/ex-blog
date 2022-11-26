@@ -1,7 +1,7 @@
 ---
 title: PSAI ep.02
 slug: psai-02
-category: PSAI
+category: club
 date: 2022.07.31
 description: PSAI에서는 도대체 무엇을 하는가!
 image: 

@@ -50,7 +50,7 @@
                 <div class="text-slate-600 text-xl font-semibold group-hover:text-indigo-400 transition duration-200 logo">{{article.title}}</div> 
                  
                 <div class="flex items-center ">
-                    <div v-if="`${article.category}` == 'PSAI'" class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">{{article.category}}</div> 
+                    <div v-if="`${article.category}` == 'club'" class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-400 rounded font-normal">{{article.category}}</div> 
                     <div v-else-if="`${article.category}` == 'retrospect'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-emerald-500 rounded font-normal">{{article.category}}</div> 
                     <div v-else-if="`${article.category}` == 'etc'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-yellow-500 rounded font-normal">{{article.category}}</div>
                     <div v-else > </div> 
