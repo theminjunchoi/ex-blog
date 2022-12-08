@@ -41,8 +41,9 @@
               <div class=" mb-1.5 flex items-center keep-all" >
                 <div class="text-slate-600 text-xl font-semibold group-hover:text-indigo-400 transition duration-200 logo">{{study.name}}</div> 
                 <div class="flex items-center ">
-                    <div v-if="`${study.state}` == '50'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-emerald-500 rounded font-normal">50%</div> 
-                    <div v-else-if="`${study.state}` == '20'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-orange-400 rounded font-normal">20%</div> 
+                    <div v-if="`${study.state}` == '75'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-blue-500 rounded font-normal">75%</div> 
+                    <div v-else-if="`${study.state}` == '50'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-emerald-500 rounded font-normal">20%</div> 
+                    <div v-else-if="`${study.state}` == '20'"  class="ml-2 px-1.5 py-1 text-xs md:text-xs text-white bg-yellow-500 rounded font-normal">20%</div> 
                     <div v-else > </div> 
                 </div>
               </div>
