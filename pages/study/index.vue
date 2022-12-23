@@ -65,6 +65,7 @@ import aosMixin from '~/mixins/aos';
 export default {
     async asyncData({ $content, params }) {
         const studies = await $content('studies', params.id)
+        .where({"visibility": true})
         .sortBy('order', 'asc')
         .fetch();
         return { studies }
