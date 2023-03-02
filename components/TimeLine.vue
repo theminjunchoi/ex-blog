@@ -37,7 +37,27 @@
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          2018 - ICPA
+          Serving in the Military
+        </h3>
+        <time
+          class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+          >2023 - 2024
+        </time>
+        <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+          
+        </p>
+      </li>
+      <li class="mb-10 ml-6">
+        <span
+          class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900"
+        >
+          <img
+            class="w-3 h-3 text-blue-600 dark:text-blue-400"
+            src="~assets/icon/academy.svg"
+          />
+        </span>
+        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          ICPA
         </h3>
         <time
           class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
